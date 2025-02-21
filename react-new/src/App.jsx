@@ -1,18 +1,22 @@
-const Card = () => {
+const Card = ({ title }) => {
   return (
     <div>
-      <h2>Card Component</h2>
+      <h2>{title}</h2>
     </div>
   );
 };
 const App = () => {
   return (
-    <div>
+    <div className="card-container">
       <h2>Functional Arrow Component</h2>
 
-      <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card
+        title="Star War"
+        rating={5}
+        isCool={true}
+        actors={[{ name: "Actors" }]}></Card>
+      <Card title="Avatar"></Card>
+      <Card title="The Lion King"></Card>
     </div>
   );
 };
