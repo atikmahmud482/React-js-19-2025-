@@ -70,7 +70,7 @@ const App = () => {
             ) : errorMessage ? (
               <p className="text-red-500">{errorMessage}</p>
             ) : (
-              <ul className="grid grid-cols-1 gap-4">
+              <ul className="">
                 {movieList.map((movie) => (
                   <MovieCard key={movie.id} movie={movie} />
                 ))}

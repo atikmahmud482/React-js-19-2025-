@@ -183,7 +183,7 @@
 }
 
 /* ///// */
-.movie-list {
+/* .movie-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
@@ -211,4 +211,4 @@
   padding: 0 8px;
   font-size: 0.9rem;
   color: #555;
-}
+} */
