@@ -1,7 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useState } from "react";
 import Search from "./components/Search";
 
 const App = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+
   return (
     <main>
       <div className="pattern"> </div>
@@ -15,7 +18,8 @@ const App = () => {
           </h1>
         </header>
 
-        <Search />
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+        <h1 className="text-white">{searchTerm}</h1>
       </div>
     </main>
   );
