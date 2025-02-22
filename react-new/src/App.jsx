@@ -21,7 +21,14 @@ const App = () => {
     try {
       const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
       const response = await fetch(endpoint, API_OPTIONS);
-      alert(response);
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch movies");
+      }
+
+      const data = await response.json();
+
+      console.log(data);
     } catch (error) {
       console.error(`Error: ${error}`);
       setErrorMassage("Error fetching movies. Please try again later.");
@@ -56,6 +63,3 @@ const App = () => {
 };
 
 export default App;
-
-////////////////////
-// fsdlkfjsklfs
