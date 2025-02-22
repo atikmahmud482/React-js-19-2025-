@@ -1,0 +1,88 @@
+// import { useEffect, useState } from "react";
+
+// // eslint-disable-next-line react/prop-types
+// const Card = ({ title }) => {
+//   const [count, setCount] = useState(0);
+//   const [hasLiked, setHasLiked] = useState(false);
+
+//   useEffect(() => {
+//     console.log(`${title} has been liked: ${hasLiked}`);
+//   }, [hasLiked]);
+
+//   return (
+//     <div className="card" onClick={() => setCount(count + 1)}>
+//       <h2>
+//         {title} <br /> {count}
+//       </h2>
+
+//       <button onClick={() => setHasLiked(!hasLiked)}>
+//         {hasLiked ? "❤️" : "🤍"}
+//       </button>
+//     </div>
+//   );
+// };
+// const App = () => {
+//   return (
+//     <div className="card-container">
+//       {/* <h2>Functional Arrow Component</h2> */}
+
+//       <Card
+//         title="Star War"
+//         rating={5}
+//         isCool={true}
+//         actors={[{ name: "Actors" }]}></Card>
+//       <Card title="Avatar"></Card>
+//       <Card title="The Lion King"></Card>
+//     </div>
+//   );
+// };
+// export default App;
+
+
+// style
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 40px;
+  background-color: #151515;
+  font-family: "Franklin Gothic Medium", Arial;
+}
+
+h2 {
+  color: #f3f3f3;
+  text-align: center;
+
+  font-size: 48px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.card {
+  /* display: flex; */
+  border: 1px solid #4b5362;
+  padding: 20px;
+  margin: 10px;
+  background-color: #31363f;
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+button {
+  border: none;
+  font-size: 30px;
+  background-color: transparent;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
