@@ -27,7 +27,7 @@ h2 {
 }
 
 .card {
-  display: flex;
+  /* display: flex; */
   border: 1px solid #4b5362;
   padding: 20px;
   margin: 10px;
