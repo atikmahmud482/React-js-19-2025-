@@ -1,9 +1,36 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Search from "./components/Search";
+
+const API_BASE_URL = "https://api.themoviedb.org/3";
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
+const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization: `Bearer ${API_KEY}`,
+  },
+};
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [errorMassage, setErrorMassage] = useState("");
+
+  const fetchMovies = async () => {
+    try {
+      const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+      const response = await fetch(endpoint, API_OPTIONS);
+      alert(response);
+    } catch (error) {
+      console.error(`Error: ${error}`);
+      setErrorMassage("Error fetching movies. Please try again later.");
+    }
+  };
+
+  useEffect(() => {
+    fetchMovies();
+  }, []);
 
   return (
     <main>
@@ -16,10 +43,13 @@ const App = () => {
             Find <span className="text-gradient">Movies</span> You'll Enjoy
             Without the Hassle
           </h1>
-        </header>
+          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
-        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-        <h1 className="text-white">{searchTerm}</h1>
+          <section className="all-movies">
+            <h2>All Movie</h2>
+            {errorMassage && <p className="text-red-500">{errorMassage}</p>}
+          </section>
+        </header>
       </div>
     </main>
   );
