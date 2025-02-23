@@ -20,31 +20,31 @@ export const updateSearchCount = async (searchTerm, movie) => {
     ]);
 
     if (result.documents.length > 0) {
-      // Document exists — update the search count
+      // Use the first document from the result
       const existingDoc = result.documents[0];
+
       const updatedDoc = await databases.updateDocument(
         DATABASE_ID,
         COLLECTION_ID,
-        existingDoc.$id,
+        existingDoc.$id, // Reference the correct document ID
         {
-          searchCount: existingDoc.searchCount + 1,
+          searchCount: (existingDoc.searchCount || 0) + 1, // Ensure it's an integer
           lastSearchedMovie: movie.title,
         }
       );
 
       console.log("Search count updated:", updatedDoc);
     } else {
+      // Use "searchCount" instead of "count"
       const newDoc = await databases.createDocument(
         DATABASE_ID,
         COLLECTION_ID,
         ID.unique(),
         {
           searchTerm,
-          count: 1,
+          searchCount: 1, // Set "searchCount" to 1 for new records
           movie_id: movie.id,
-          poster_url: movie.poster_path
-            ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
-            : "https://via.placeholder.com/500", // Fallback to a placeholder image if no poster is available
+          poster_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
         }
       );
 
