@@ -212,3 +212,85 @@
   font-size: 0.9rem;
   color: #555;
 } */
+/* Gradient background */
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, #1e3a8a, #14b8a6);
+}
+
+/* Hover effects */
+.transition-transform {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hover:scale-110:hover {
+  transform: scale(1.1);
+}
+
+.hover:text-yellow-300:hover {
+  color: #fbbf24; /* yellow color */
+}
+
+.hover:underline:hover {
+  text-decoration: underline;
+}
+
+/* Footer container layout */
+footer {
+  padding: 3rem 0;
+}
+
+footer .max-w-screen-xl {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .text-lg {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+footer .text-xl {
+  font-size: 1.25rem;
+}
+
+/* Flexbox layout for footer sections */
+footer .flex {
+  display: flex;
+}
+
+footer .flex-col {
+  flex-direction: column;
+}
+
+footer .md\\:flex-row {
+  flex-direction: row;
+}
+
+footer .md\\:justify-between {
+  justify-content: space-between;
+}
+
+footer .md\\:text-left {
+  text-align: left;
+}
+
+/* Responsive spacing for different screen sizes */
+footer .mt-2 {
+  margin-top: 0.5rem;
+}
+
+footer .mt-6 {
+  margin-top: 1.5rem;
+}
+
+footer .gap-4 {
+  gap: 1rem;
+}
+
+footer .gap-6 {
+  gap: 1.5rem;
+}
+
+footer .md\\:mt-0 {
+  margin-top: 0;
+}
