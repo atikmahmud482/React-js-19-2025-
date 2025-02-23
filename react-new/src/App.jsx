@@ -5,6 +5,7 @@ import MovieCard from "./components/MovieCard";
 import { useDebounce } from "react-use";
 import { getTrendingMovies, updateSearchCount } from "./appwrite";
 import Footer from "./components/Footer";
+// import Header from "./components/Header";
 
 const API_BASE_URL = "https://api.themoviedb.org/3";
 const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
@@ -71,6 +72,7 @@ const App = () => {
       console.error(`Error: ${error}`);
     }
   };
+
   useEffect(() => {
     if (debounceSearchTerm.trim() === "") {
       fetchMovies();
@@ -84,19 +86,18 @@ const App = () => {
   }, []);
 
   return (
-    <main>
-      <div className="pattern"> </div>
+    <main className="">
+      <div className="pattern"></div>
 
       <div className="wrapper">
         <header>
-          <img src="/hero.png" alt="Hero Banner" />
+          <img src="/hero.png" alt="Hero Banner" className="w-full h-auto" />
           <h1>
             Find <span className="text-gradient">Movies</span> You'll Enjoy
             Without the Hassle
           </h1>
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
-
         {trendingMovies.length > 0 && (
           <section className="trending">
             <h2>Trending Movies</h2>
@@ -106,15 +107,14 @@ const App = () => {
                 <li key={movie.$id}>
                   <p>{index + 1}</p>
                   <img src={movie.poster_url} alt={movie.searchTerm} />
-                  <h3>{movie.searchTerm}</h3>{" "}
-                  {/* Display movie title or search term */}
+                  <h3>{movie.searchTerm}</h3>
                 </li>
               ))}
             </ul>
           </section>
         )}
 
-        <section className="all-movies ">
+        <section className="all-movies">
           <h2>{searchTerm ? "Search Results" : "All Movies"}</h2>
 
           {isLoading ? (

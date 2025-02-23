@@ -7,10 +7,11 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-10">
+    <footer className="bg-dark-100 text-white">
       <div className="max-w-screen-xl mx-auto px-4">
-        <div className="flex flex-col items-center md:flex-row md:justify-between md:text-left">
-          <div className="text-center md:text-left">
+        {/* Centering the content vertically and horizontally */}
+        <div className="flex flex-col items-center justify-center text-center md:text-center">
+          <div>
             <p className="text-lg font-bold">Movie Finder</p>
             <p className="mt-2">
               Your go-to place for discovering great movies!
@@ -21,11 +22,16 @@ const Footer = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="flex gap-4 mt-6 md:mt-0 text-xl">
+          <div className="flex gap-4 mt-6 text-xl justify-center">
             <a
-              href="#"
+              href="https://www.facebook.com/atikmahmud.atikmahmud.564"
               className="transition-transform transform hover:scale-110 hover:text-yellow-300">
               <FaFacebookF />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/atik-al-mahmud-8b6628340/"
+              className="transition-transform transform hover:scale-110 hover:text-yellow-300">
+              <FaLinkedinIn />
             </a>
             <a
               href="#"
@@ -36,11 +42,6 @@ const Footer = () => {
               href="#"
               className="transition-transform transform hover:scale-110 hover:text-yellow-300">
               <FaInstagram />
-            </a>
-            <a
-              href="#"
-              className="transition-transform transform hover:scale-110 hover:text-yellow-300">
-              <FaLinkedinIn />
             </a>
           </div>
         </div>
