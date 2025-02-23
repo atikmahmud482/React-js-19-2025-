@@ -29,7 +29,7 @@ export const updateSearchCount = async (searchTerm, movie) => {
         existingDoc.$id, // Reference the correct document ID
         {
           searchCount: (existingDoc.searchCount || 0) + 1, // Ensure it's an integer
-          lastSearchedMovie: movie.title,
+          lastSearchedMovie: movie.title, // Make sure this is added
         }
       );
 
@@ -45,6 +45,7 @@ export const updateSearchCount = async (searchTerm, movie) => {
           searchCount: 1, // Set "searchCount" to 1 for new records
           movie_id: movie.id,
           poster_url: `https://image.tmdb.org/t/p/w500${movie.poster_path}`,
+          lastSearchedMovie: movie.title, // Ensure "lastSearchedMovie" is passed
         }
       );
 
@@ -52,5 +53,17 @@ export const updateSearchCount = async (searchTerm, movie) => {
     }
   } catch (error) {
     console.error(`Error updating search count: ${error}`);
+  }
+};
+
+export const getTrendingMovies = async () => {
+  try {
+    const result = await databases.listDocuments(DATABASE_ID, COLLECTION_ID, [
+      Query.limit(5),
+      Query.orderDesc("searchCount"),
+    ]);
+    return result.documents;
+  } catch (error) {
+    console.error(error);
   }
 };
