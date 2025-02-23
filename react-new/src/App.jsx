@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useEffect, useState } from "react";
 import Search from "./components/Search";
 import MovieCard from "./components/MovieCard";
@@ -19,11 +20,16 @@ const App = () => {
   const [movieList, setMovieList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchMovies = async () => {
+  const fetchMovies = async (query = "") => {
     setIsLoading(true);
     setErrorMessage("");
+    setMovieList([]);
+
     try {
-      const endpoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+      const endpoint = query
+        ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}`
+        : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+
       const response = await fetch(endpoint, API_OPTIONS);
 
       if (!response.ok) {
@@ -46,8 +52,8 @@ const App = () => {
   };
 
   useEffect(() => {
-    fetchMovies();
-  }, []);
+    fetchMovies(searchTerm);
+  }, [searchTerm]);
 
   return (
     <main>
@@ -63,10 +69,12 @@ const App = () => {
           <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
 
           <section className="all-movies pt-8">
-            <h2>All Movies</h2>
+            <h2>{searchTerm ? "Search Results" : "All Movies"}</h2>
 
             {isLoading ? (
-              <p className="text-white">Loading movies...</p>
+              <div className="flex justify-center items-center">
+                <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+              </div>
             ) : errorMessage ? (
               <p className="text-red-500">{errorMessage}</p>
             ) : (
