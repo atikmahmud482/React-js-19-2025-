@@ -414,5 +414,9 @@
 //   useState < RequestState > { status: "idle" };
 
 // useReducer
-import App from "./App.tsx";
-export default App;
+
+// import App from "./App.tsx";
+// export default App;
+
+// useMemo
+// const visibleTodos = useMemo(() => filterTodos(todos, tab), [todos, tab]);
