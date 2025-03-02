@@ -404,11 +404,15 @@
 
 // UseState()
 
-type RequestState =
-  | { status: "idle" }
-  | { status: "loading" }
-  | { status: "success", data: any }
-  | { status: "error", error: Error };
+// type RequestState =
+//   | { status: "idle" }
+//   | { status: "loading" }
+//   | { status: "success", data: any }
+//   | { status: "error", error: Error };
 
-const [requestState, setRequestState] =
-  useState < RequestState > { status: "idle" };
+// const [requestState, setRequestState] =
+//   useState < RequestState > { status: "idle" };
+
+// useReducer
+import App from "./App.tsx";
+export default App;
