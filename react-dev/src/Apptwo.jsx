@@ -22,20 +22,32 @@
 //       <h1>Good job!</h1>
 //     );
 //   }
-export default function TodoList() {
+
+//Pro-tip: Use a JSX Converter
+
+// export default function TodoList() {
+//   return (
+//     <>
+//       <h1>Hedy Lamarr's Todos</h1>
+//       <img
+//         src="https://i.imgur.com/yXOvdOSs.jpg"
+//         alt="Hedy Lamarr"
+//         className="photo"
+//       />
+//       <ul>
+//         <li>Invent new traffic lights</li>
+//         <li>Rehearse a movie scene</li>
+//         <li>Improve the spectrum technology</li>
+//       </ul>
+//     </>
+//   );
+// }
+export default function Avatar() {
   return (
-    <>
-      <h1>Hedy Lamarr's Todos</h1>
-      <img
-        src="https://i.imgur.com/yXOvdOSs.jpg"
-        alt="Hedy Lamarr"
-        className="photo"
-      />
-      <ul>
-        <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve the spectrum technology</li>
-      </ul>
-    </>
+    <img
+      className="avatar"
+      src="https://i.imgur.com/7vQD0fPs.jpg"
+      alt="Gregorio Y. Zara"
+    />
   );
 }
