@@ -239,35 +239,85 @@
 
 //Passing JSX in a children prop
 
-function Card({ children, title }) {
+// function Card({ children, title }) {
+//   return (
+//     <div className="card">
+//       <div className="card-content">
+//         <h1>{title}</h1>
+//         {children}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default function Profile() {
+//   return (
+//     <div>
+//       <Card title="Photo">
+//         <img
+//           className="avatar"
+//           src="https://i.imgur.com/OKS67lhm.jpg"
+//           alt="Aklilu Lemma"
+//           width={100}
+//           height={100}
+//         />
+//       </Card>
+//       <Card title="About">
+//         <p>
+//           Aklilu Lemma was a distinguished Ethiopian scientist who discovered a
+//           natural treatment to schistosomiasis.
+//         </p>
+//       </Card>
+//     </div>
+//   );
+// }
+
+// Adjust the image size based on a prop
+
+import { getImageUrl } from "./utils.js";
+
+const ratio = window.devicePixelRatio;
+
+function Avatar({ person, size }) {
+  let thumbnailSize = "s";
+  if (size * ratio > 90) {
+    thumbnailSize = "b";
+  }
   return (
-    <div className="card">
-      <div className="card-content">
-        <h1>{title}</h1>
-        {children}
-      </div>
-    </div>
+    <img
+      className="avatar"
+      src={getImageUrl(person, thumbnailSize)}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
   );
 }
 
 export default function Profile() {
   return (
-    <div>
-      <Card title="Photo">
-        <img
-          className="avatar"
-          src="https://i.imgur.com/OKS67lhm.jpg"
-          alt="Aklilu Lemma"
-          width={100}
-          height={100}
-        />
-      </Card>
-      <Card title="About">
-        <p>
-          Aklilu Lemma was a distinguished Ethiopian scientist who discovered a
-          natural treatment to schistosomiasis.
-        </p>
-      </Card>
-    </div>
+    <>
+      <Avatar
+        size={40}
+        person={{
+          name: "Gregorio Y. Zara",
+          imageId: "7vQD0fP",
+        }}
+      />
+      <Avatar
+        size={70}
+        person={{
+          name: "Gregorio Y. Zara",
+          imageId: "7vQD0fP",
+        }}
+      />
+      <Avatar
+        size={120}
+        person={{
+          name: "Gregorio Y. Zara",
+          imageId: "7vQD0fP",
+        }}
+      />
+    </>
   );
 }
