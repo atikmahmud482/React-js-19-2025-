@@ -274,50 +274,74 @@
 
 // Adjust the image size based on a prop
 
-import { getImageUrl } from "./utils.js";
+// import { getImageUrl } from "./utils.js";
 
-const ratio = window.devicePixelRatio;
+// const ratio = window.devicePixelRatio;
 
-function Avatar({ person, size }) {
-  let thumbnailSize = "s";
-  if (size * ratio > 90) {
-    thumbnailSize = "b";
-  }
+// function Avatar({ person, size }) {
+//   let thumbnailSize = "s";
+//   if (size * ratio > 90) {
+//     thumbnailSize = "b";
+//   }
+//   return (
+//     <img
+//       className="avatar"
+//       src={getImageUrl(person, thumbnailSize)}
+//       alt={person.name}
+//       width={size}
+//       height={size}
+//     />
+//   );
+// }
+
+// export default function Profile() {
+//   return (
+//     <>
+//       <Avatar
+//         size={40}
+//         person={{
+//           name: "Gregorio Y. Zara",
+//           imageId: "7vQD0fP",
+//         }}
+//       />
+//       <Avatar
+//         size={70}
+//         person={{
+//           name: "Gregorio Y. Zara",
+//           imageId: "7vQD0fP",
+//         }}
+//       />
+//       <Avatar
+//         size={120}
+//         person={{
+//           name: "Gregorio Y. Zara",
+//           imageId: "7vQD0fP",
+//         }}
+//       />
+//     </>
+//   );
+// }
+
+//Familiar props
+function Avatar() {
   return (
     <img
       className="avatar"
-      src={getImageUrl(person, thumbnailSize)}
-      alt={person.name}
-      width={size}
-      height={size}
+      src="https://i.imgur.com/1bX5QH6.jpg"
+      alt="Lin Lanying"
+      width={100}
+      height={100}
     />
   );
 }
 
+//passing props to a component
+// export default function Profile() {
+//   return <Avatar />;
+// }
+
 export default function Profile() {
   return (
-    <>
-      <Avatar
-        size={40}
-        person={{
-          name: "Gregorio Y. Zara",
-          imageId: "7vQD0fP",
-        }}
-      />
-      <Avatar
-        size={70}
-        person={{
-          name: "Gregorio Y. Zara",
-          imageId: "7vQD0fP",
-        }}
-      />
-      <Avatar
-        size={120}
-        person={{
-          name: "Gregorio Y. Zara",
-          imageId: "7vQD0fP",
-        }}
-      />
-    </>
+    <Avatar parson={{ name: "Lin Lanying", imageId: "1bX5QH6" }} size={100} />
   );
 }
