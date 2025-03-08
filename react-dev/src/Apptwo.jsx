@@ -580,3 +580,8 @@
 //     </div>
 //   );
 // }
+
+// Specifying a default value for a prop
+// function Avatar({ person, size = 100 }) {
+//     // ...
+//   }
