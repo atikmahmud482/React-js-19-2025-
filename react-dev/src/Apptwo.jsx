@@ -585,3 +585,17 @@
 // function Avatar({ person, size = 100 }) {
 //     // ...
 //   }
+
+// Forwarding props with the JSX spread syntax
+function Profile({ person, size, isSepia, thickBorder }) {
+  return (
+    <div className="card">
+      <Avatar
+        person={person}
+        size={size}
+        isSepia={isSepia}
+        thickBorder={thickBorder}
+      />
+    </div>
+  );
+}
