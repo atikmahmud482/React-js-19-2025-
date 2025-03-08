@@ -587,15 +587,41 @@
 //   }
 
 // Forwarding props with the JSX spread syntax
-function Profile({ person, size, isSepia, thickBorder }) {
+// function Profile({ person, size, isSepia, thickBorder }) {
+//   return (
+//     <div className="card">
+//       <Avatar
+//         person={person}
+//         size={size}
+//         isSepia={isSepia}
+//         thickBorder={thickBorder}
+//       />
+//     </div>
+//   );
+// }
+//Passing JSX as children
+{
+  /* <div>
+  <img />
+</div>;
+
+import Avatar from "./Avatar.js";
+
+function Card({ children }) {
+  return <div className="card">{children}</div>;
+}
+
+export default function Profile() {
   return (
-    <div className="card">
+    <Card>
       <Avatar
-        person={person}
-        size={size}
-        isSepia={isSepia}
-        thickBorder={thickBorder}
+        size={100}
+        person={{
+          name: "Katsuko Saruhashi",
+          imageId: "YfeOqp2",
+        }}
       />
-    </div>
+    </Card>
   );
+} */
 }
