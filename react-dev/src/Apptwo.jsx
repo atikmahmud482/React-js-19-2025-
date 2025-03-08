@@ -603,25 +603,30 @@
 {
   /* <div>
   <img />
-</div>;
-
-import Avatar from "./Avatar.js";
-
-function Card({ children }) {
-  return <div className="card">{children}</div>;
+</div>; */
 }
 
-export default function Profile() {
-  return (
-    <Card>
-      <Avatar
-        size={100}
-        person={{
-          name: "Katsuko Saruhashi",
-          imageId: "YfeOqp2",
-        }}
-      />
-    </Card>
-  );
-} */
-}
+// import Avatar from "./Avatar.js";
+
+// function Card({ children }) {
+//   return <div className="card">{children}</div>;
+// }
+
+// export default function Profile() {
+//   return (
+//     <Card>
+//       <Avatar
+//         size={100}
+//         person={{
+//           name: "Katsuko Saruhashi",
+//           imageId: "YfeOqp2",
+//         }}
+//       />
+//     </Card>
+//   );
+// }
+
+//How props change over time
+// export default function Clock({ color, time }) {
+//   return <h1 style={{ color: color }}>{time}</h1>;
+// }
