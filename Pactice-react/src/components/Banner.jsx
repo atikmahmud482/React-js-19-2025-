@@ -23,11 +23,7 @@ const Banner = () => {
 
         {/* Image */}
         <div className="md:w-1/2">
-          <img
-            src="https://via.placeholder.com/500x300?text=Product+Banner"
-            alt="Banner"
-            className="w-full rounded-xl shadow-lg"
-          />
+          <img src="/banner.jpg" className="w-full rounded-xl shadow-lg" />
         </div>
       </div>
     </section>

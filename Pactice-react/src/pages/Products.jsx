@@ -2,7 +2,7 @@ import React from "react"; // Import React
 
 const Products = () => {
   return (
-    <div>
+    <div className="text-center mt-10 text-xl">
       <h1>Products</h1>
       {/* Your product content here */}
     </div>
