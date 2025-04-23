@@ -1,6 +1,7 @@
-import Footer from "./Footer";
-import Header from "./Header";
 import React from "react";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Banner from "./components/Banner";
 
 const App = () => {
   return (
@@ -8,7 +9,9 @@ const App = () => {
       <Header />
 
       <main className="flex-grow">
-        {/* Your page content or routes go here */}
+        {/* Your page content or routes go 
+        here */}
+        <Banner />
       </main>
 
       <Footer />
