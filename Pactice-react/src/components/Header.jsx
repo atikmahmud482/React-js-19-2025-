@@ -1,5 +1,6 @@
 // Header.jsx
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link for React Router
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,18 +16,18 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <a href="#" className="hover:text-blue-500 transition">
+          <Link to="/" className="hover:text-blue-500 transition">
             Home
-          </a>
-          <a href="#" className="hover:text-blue-500 transition">
+          </Link>
+          <Link to="/products" className="hover:text-blue-500 transition">
             Products
-          </a>
-          <a href="#" className="hover:text-blue-500 transition">
+          </Link>
+          <Link to="/about" className="hover:text-blue-500 transition">
             About
-          </a>
-          <a href="#" className="hover:text-blue-500 transition">
+          </Link>
+          <Link to="/contact" className="hover:text-blue-500 transition">
             Contact
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -55,18 +56,18 @@ const Header = () => {
       {/* Mobile Nav Menu */}
       {menuOpen && (
         <div className="md:hidden mt-3 space-y-2 text-gray-700 font-medium">
-          <a href="#" className="block hover:text-blue-500">
+          <Link to="/" className="block hover:text-blue-500">
             Home
-          </a>
-          <a href="#" className="block hover:text-blue-500">
+          </Link>
+          <Link to="/products" className="block hover:text-blue-500">
             Products
-          </a>
-          <a href="#" className="block hover:text-blue-500">
+          </Link>
+          <Link to="/about" className="block hover:text-blue-500">
             About
-          </a>
-          <a href="#" className="block hover:text-blue-500">
+          </Link>
+          <Link to="/contact" className="block hover:text-blue-500">
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </header>
