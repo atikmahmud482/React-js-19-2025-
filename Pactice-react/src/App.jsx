@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contract";
 import Footer from "./components/Footer";
 import ErrorBoundary from "./ErrorBoundary";
+import ProductDetails from "./components/ProductDetails";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/products" element={<Products />} />
               <Route path="/about" element={<About />} />
+              <Route path="/product/:id" element={<ProductDetails />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>

@@ -7,9 +7,7 @@ const Home = () => {
     <>
       <Banner />
       <div>
-        <h2 className="text-center mt-10 text-xl font-bold">
-          Welcome to CloudCore!
-        </h2>
+        <h1 className="text-center mt-10 text-xl font-bold">All Products</h1>
         <CardSection></CardSection>
       </div>
     </>
