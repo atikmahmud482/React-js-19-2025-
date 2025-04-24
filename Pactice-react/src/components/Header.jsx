@@ -1,4 +1,3 @@
-// Header.jsx
 import React, { useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for React Router
 
@@ -54,22 +53,23 @@ const Header = () => {
       </div>
 
       {/* Mobile Nav Menu */}
-      {menuOpen && (
-        <div className="md:hidden mt-3 space-y-2 text-gray-700 font-medium">
-          <Link to="/" className="block hover:text-blue-500">
-            Home
-          </Link>
-          <Link to="/products" className="block hover:text-blue-500">
-            Products
-          </Link>
-          <Link to="/about" className="block hover:text-blue-500">
-            About
-          </Link>
-          <Link to="/contact" className="block hover:text-blue-500">
-            Contact
-          </Link>
-        </div>
-      )}
+      <div
+        className={`${
+          menuOpen ? "max-h-[300px] opacity-100" : "max-h-0 opacity-0"
+        } md:hidden mt-3 text-gray-700 font-medium transition-all duration-500 overflow-hidden px-6 text-right space-y-3`}>
+        <Link to="/" className="block hover:text-blue-500">
+          Home
+        </Link>
+        <Link to="/products" className="block hover:text-blue-500">
+          Products
+        </Link>
+        <Link to="/about" className="block hover:text-blue-500">
+          About
+        </Link>
+        <Link to="/contact" className="block hover:text-blue-500">
+          Contact
+        </Link>
+      </div>
     </header>
   );
 };
