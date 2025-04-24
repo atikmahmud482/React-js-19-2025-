@@ -29,11 +29,12 @@ const CardSection = () => {
           className="bg-white rounded-xl shadow-xl overflow-hidden">
           {/* Image rendering with error handling */}
           <img
-            src={`https://admin.refabry.com/storage/${product.product_images[0].name}`} // Image URL
+            src={`https://admin.refabry.com/storage/product/${product.product_images?.[0]?.name}`}
             alt={product.name}
-            className="w-full h-48 object-cover"
-            onError={(e) => (e.target.src = "/path/to/default-image.jpg")} // Default image if error occurs
+            className="w-full md:w-1/2 h-96 object-cover rounded-lg mb-6 md:mb-0"
+            onError={(e) => (e.target.src = "/path/to/default-image.jpg")} // Default image on error
           />
+
           <div className="p-6">
             {/* Display Product Name */}
             <h3 className="text-xl font-semibold text-gray-800">

@@ -29,11 +29,11 @@ const Products = () => {
           key={product.id}
           className="bg-white rounded-xl shadow-xl overflow-hidden">
           <img
-            src={`https://admin.refabry.com/storage/${product.product_images[0].name}`}
+            src={`https://admin.refabry.com/storage/product/${product.product_images?.[0]?.name}`}
             alt={product.name}
-            className="w-full h-48 object-cover"
-            onError={(e) => (e.target.src = "/path/to/default-image.jpg")}
+            className="w-full md:w-1/2 h-96 object-cover rounded-lg mb-6 md:mb-0"
           />
+
           <div className="p-6">
             <h3 className="text-xl font-semibold text-gray-800">
               {product.name}
@@ -44,7 +44,9 @@ const Products = () => {
             </p>
             <button
               className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
-              onClick={() => handleLearnMoreClick(product)}>
+              onClick={() =>
+                navigate(`/product/${product.id}`, { state: { product } })
+              }>
               Learn More
             </button>
           </div>
