@@ -48,8 +48,9 @@ const CardSection = () => {
             </p>
             <button
               className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
-              onClick={() => handleLearnMoreClick(product.id)} // Handle click
-            >
+              onClick={() =>
+                navigate(`/product/${product.id}`, { state: { product } })
+              }>
               Learn More
             </button>
           </div>

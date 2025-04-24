@@ -15,8 +15,12 @@ const ProductCard = ({ product }) => {
 
       {/* Link to dynamic route */}
       <Link to={`/product/${product.id}`}>
-        <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
-          View Details
+        <button
+          className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+          onClick={() =>
+            navigate(`/product/${product.id}`, { state: { product } })
+          }>
+          Learn More
         </button>
       </Link>
     </div>
