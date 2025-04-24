@@ -1,5 +1,5 @@
-// Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,24 +23,24 @@ const Footer = () => {
           </h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/" className="hover:text-blue-500">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/products" className="hover:text-blue-500">
                 Products
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/about" className="hover:text-blue-500">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/contact" className="hover:text-blue-500">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -50,24 +50,24 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-blue-600 mb-2">Support</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/faqs" className="hover:text-blue-500">
                 FAQs
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/shipping-returns" className="hover:text-blue-500">
                 Shipping & Returns
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/privacy-policy" className="hover:text-blue-500">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-blue-500">
+              <Link to="/terms-conditions" className="hover:text-blue-500">
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

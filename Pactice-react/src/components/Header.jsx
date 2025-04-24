@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom"; // Import Link for React Router
 
 const Header = () => {
@@ -15,18 +16,37 @@ const Header = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <Link to="/" className="hover:text-blue-500 transition">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-500"
+            }>
             Home
-          </Link>
-          <Link to="/products" className="hover:text-blue-500 transition">
+          </NavLink>
+
+          <NavLink
+            to="/products"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-500"
+            }>
             Products
-          </Link>
-          <Link to="/about" className="hover:text-blue-500 transition">
+          </NavLink>
+
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-500"
+            }>
             About
-          </Link>
-          <Link to="/contact" className="hover:text-blue-500 transition">
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "hover:text-blue-500"
+            }>
             Contact
-          </Link>
+          </NavLink>
         </nav>
 
         {/* Mobile Menu Button */}
