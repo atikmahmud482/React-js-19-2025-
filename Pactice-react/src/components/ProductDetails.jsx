@@ -1,35 +1,68 @@
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import axios from "axios";
 
 const ProductDetails = () => {
-  const { id } = useParams();
+  const { id } = useParams(); // Get the product ID from URL
   const [product, setProduct] = useState(null);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    axios
-      .get("https://admin.refabry.com/api/all/product/get")
-      .then((res) => {
-        const found = res.data.data.data.find((item) => item.id == id);
-        setProduct(found);
+    console.log("Fetching product:", id); // Debugging: check if ID is correct
+    fetch(`https://admin.refabry.com/api/all/product/get/${id}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === true) {
+          setProduct(data.data);
+        } else {
+          setError("Product not found");
+        }
       })
-      .catch((err) => console.error("Error loading product:", err));
+      .catch((error) => {
+        setError(error.message);
+      });
   }, [id]);
 
-  if (!product) return <div>Loading...</div>;
+  if (error) {
+    return (
+      <div className="text-red-500 text-center">
+        <h2>Product not found</h2>
+        <p>Please check the product ID.</p>
+      </div>
+    );
+  }
 
-  const imageUrl = `https://admin.refabry.com/storage/product/${product.image}`;
+  if (!product) {
+    return <div className="text-center">Loading...</div>;
+  }
 
   return (
-    <div className="p-6">
-      <img
-        src={imageUrl}
-        alt={product.name}
-        className="w-full max-w-md mx-auto rounded-xl"
-      />
-      <h1 className="text-3xl font-bold mt-4">{product.name}</h1>
-      <p className="text-lg text-gray-600 mt-2">{product.description}</p>
-      <p className="text-2xl font-semibold mt-4">{product.price}৳</p>
+    <div className="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
+      <div className="flex flex-col md:flex-row items-center">
+        {/* Product Image */}
+        <img
+          src={`https://admin.refabry.com/storage/${product.product_images[0].name}`}
+          alt={product.name}
+          className="w-full md:w-1/2 h-96 object-cover rounded-lg mb-6 md:mb-0"
+        />
+
+        <div className="md:ml-8 mt-6 md:mt-0">
+          {/* Product Name */}
+          <h2 className="text-3xl font-bold text-gray-800">{product.name}</h2>
+
+          {/* Product Description */}
+          <p className="text-gray-600 mt-4">{product.description}</p>
+
+          {/* Product Price */}
+          <p className="text-xl font-semibold text-blue-600 mt-6">
+            Price: Tk {product.price}
+          </p>
+
+          {/* Add to Cart Button */}
+          <button className="mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+            Add to Cart
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

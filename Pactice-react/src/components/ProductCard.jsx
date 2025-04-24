@@ -11,7 +11,9 @@ const ProductCard = ({ product }) => {
         className="w-full h-48 object-cover rounded-md"
       />
       <h2 className="text-xl font-semibold mt-2">{product.name}</h2>
-      <p className="text-gray-500">{product.price}৳</p>
+      <p className="text-gray-500">{product.price}Tk</p>
+
+      {/* Link to dynamic route */}
       <Link to={`/product/${product.id}`}>
         <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
           View Details

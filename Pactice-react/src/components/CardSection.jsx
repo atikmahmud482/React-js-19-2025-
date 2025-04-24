@@ -1,61 +1,60 @@
-// CardSection.jsx
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CardSection = () => {
   const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const navigate = useNavigate(); // Hook to navigate to another page
 
-  // Fetch products from API
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const response = await fetch("https://fakestoreapi.com/products");
-        const data = await response.json();
-        setProducts(data);
-      } catch (error) {
-        console.error("Error fetching products:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProducts();
+    // Fetch data from your API
+    fetch("https://admin.refabry.com/api/all/product/get?page=1")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === true) {
+          setProducts(data.data.data); // Update state with the products data
+        }
+      })
+      .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
-  if (loading) {
-    return <div className="text-center py-12">Loading...</div>;
-  }
+  const handleLearnMoreClick = (id) => {
+    navigate(`/product/${id}`); // Navigate to the product detail page with the product id
+  };
 
   return (
-    <section className="py-12 px-6 bg-gray-100">
-      <div className="max-w-screen-xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center mb-8">
-          Our Products
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {product.title}
-                </h3>
-                <p className="text-gray-600 mt-2">{product.description}</p>
-                <button className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition">
-                  Learn More
-                </button>
-              </div>
-            </div>
-          ))}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      {products.map((product) => (
+        <div
+          key={product.id}
+          className="bg-white rounded-xl shadow-xl overflow-hidden">
+          {/* Image rendering with error handling */}
+          <img
+            src={`https://admin.refabry.com/storage/${product.product_images[0].name}`} // Image URL
+            alt={product.name}
+            className="w-full h-48 object-cover"
+            onError={(e) => (e.target.src = "/path/to/default-image.jpg")} // Default image if error occurs
+          />
+          <div className="p-6">
+            {/* Display Product Name */}
+            <h3 className="text-xl font-semibold text-gray-800">
+              {product.name}
+            </h3>
+            <p className="text-gray-600 mt-2 line-clamp-3">
+              {product.short_desc}
+            </p>
+            <p className="text-blue-600 font-semibold mt-2">
+              Tk {product.price}
+            </p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+              onClick={() => handleLearnMoreClick(product.id)} // Handle click
+            >
+              Learn More
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 };
 
