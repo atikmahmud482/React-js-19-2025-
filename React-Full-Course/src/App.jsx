@@ -3,6 +3,7 @@ import Card from "./Card";
 import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
+import Student from "./Student";
 
 function App() {
   return (
@@ -14,7 +15,17 @@ function App() {
       <Card></Card>
       <Card></Card>
       <Card></Card> */}
-      <Button></Button>
+      {/* <Button></Button> */}
+      <Student name="Atik" age={24} isStudent={true}></Student>
+      <Student>
+        name: "Mahmud" age: {25} isStudent: {false}
+      </Student>
+      <Student>
+        name: "Al" age: {23} isStudent: {false}
+      </Student>
+      <Student>
+        name: "Md" age: {27} isStudent: {true}
+      </Student>
     </>
   );
 }
