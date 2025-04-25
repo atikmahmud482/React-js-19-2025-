@@ -4,9 +4,9 @@ import ProfilePic from "./assets/profile-picture.png";
 function Card() {
   return (
     <div className="card">
-      <img src={ProfilePic} alt="Profile Picture" />
-      <h2>Atik-Al-Mahmud</h2>
-      <p>I am a Front-End Developer.</p>
+      <img className="card-image" src={ProfilePic} alt="Profile Picture" />
+      <h2 className="card-title">Atik-Al-Mahmud</h2>
+      <p className="card-text">I am a Front-End Developer.</p>
     </div>
   );
 }

@@ -10,6 +10,9 @@ function App() {
       <Food></Food>
       <Footer></Footer> */}
       <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
     </>
   );
 }
