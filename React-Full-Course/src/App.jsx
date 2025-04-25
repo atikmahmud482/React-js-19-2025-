@@ -1,3 +1,4 @@
+import Button from "./Button";
 import Card from "./Card";
 import Food from "./Food";
 import Footer from "./Footer";
@@ -9,10 +10,11 @@ function App() {
       {/* <Header></Header>
       <Food></Food>
       <Footer></Footer> */}
+      {/* <Card></Card>
       <Card></Card>
       <Card></Card>
-      <Card></Card>
-      <Card></Card>
+      <Card></Card> */}
+      <Button></Button>
     </>
   );
 }
