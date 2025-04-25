@@ -17,15 +17,9 @@ function App() {
       <Card></Card> */}
       {/* <Button></Button> */}
       <Student name="Atik" age={24} isStudent={true}></Student>
-      <Student>
-        name: "Mahmud" age: {25} isStudent: {false}
-      </Student>
-      <Student>
-        name: "Al" age: {23} isStudent: {false}
-      </Student>
-      <Student>
-        name: "Md" age: {27} isStudent: {true}
-      </Student>
+      <Student name="Mahmud" age={25} isStudent={false}></Student>
+      <Student name="Al" age={23} isStudent={false}></Student>
+      <Student name="Md" age={27} isStudent={true}></Student>
     </>
   );
 }
