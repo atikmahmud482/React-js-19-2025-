@@ -3,6 +3,7 @@ import Card from "./Card";
 import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
+import List from "./List";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 
@@ -22,7 +23,8 @@ function App() {
       <Student name="Al" age={23} isStudent={false}></Student>
       <Student name="Md" age={27} isStudent={true}></Student>
       <Student name="Guest" age={34} isStudent={true} /> */}
-      <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting>
+      {/* <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting> */}
+      <List></List>
     </>
   );
 }
