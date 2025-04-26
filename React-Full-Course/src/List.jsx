@@ -8,11 +8,18 @@ function List() {
     { key: 4, name: "Mango", calories: 150 },
   ];
 
-  fruits.sort((a, b) => a.name.localeCompare(b.name)); // Alphabetical sorting
+  // fruits.sort((a, b) => a.name.localeCompare(b.name)); // Alphabetical sorting
 
-  const listItems = fruits.map((fruit) => (
-    <li key={fruit.key}>
-      {fruit.name}: &nbsp; <b>{fruit.calories}</b>
+  // fruits.sort((a, b) => b.name.localeCompare(a.name)); // Reverse alphabetical sorting
+
+  // fruits.sort((a, b) => a.calories - b.calories);
+  // fruits.sort((a, b) => b.calories - a.calories);
+
+  const lowCalorieFruits = fruits.filter((fruit) => fruit.calories < 100);
+
+  const listItems = lowCalorieFruits.map((lowCalorieFruits) => (
+    <li key={lowCalorieFruits.key}>
+      {lowCalorieFruits.name}: &nbsp; <b>{lowCalorieFruits.calories}</b>
     </li>
   ));
 
