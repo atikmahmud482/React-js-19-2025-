@@ -20,6 +20,19 @@ function App() {
     { key: 9, name: "Blueberry", calories: 57 },
     { key: 10, name: "Papaya", calories: 120 },
   ];
+  const vegetables = [
+    { key: 11, name: "Carrot", calories: 41 },
+    { key: 12, name: "Broccoli", calories: 55 },
+    { key: 13, name: "Spinach", calories: 23 },
+    { key: 14, name: "Potato", calories: 77 },
+    { key: 15, name: "Tomato", calories: 18 },
+    { key: 16, name: "Cucumber", calories: 16 },
+    { key: 17, name: "Eggplant", calories: 25 },
+    { key: 18, name: "Cabbage", calories: 22 },
+    { key: 19, name: "Onion", calories: 40 },
+    { key: 20, name: "Peas", calories: 81 },
+  ];
+
   return (
     <>
       {/* <Header></Header>
@@ -37,6 +50,7 @@ function App() {
       <Student name="Guest" age={34} isStudent={true} /> */}
       {/* <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting> */}
       <List items={fruits} category="Fruits" />
+      <List items={vegetables} category="Vegetables" />
     </>
   );
 }

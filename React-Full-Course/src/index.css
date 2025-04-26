@@ -37,3 +37,30 @@
 .student p {
   margin: 0;
 }
+
+.list-category {
+  font-size: 2.5em;
+  font-weight: bold;
+  border: 3px solid;
+  text-align: center;
+  margin: 20px 0;
+  color: rgb(48, 45, 45);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(4, 246, 214);
+}
+
+.list-items {
+  font-size: 2rem;
+  list-style: none;
+  color: rgb(81, 65, 65);
+  text-align: center;
+  margin: 0;
+}
+
+.list-items .li:hover {
+  color: hsl(0, 0%, 45%);
+  cursor: pointer;
+}
