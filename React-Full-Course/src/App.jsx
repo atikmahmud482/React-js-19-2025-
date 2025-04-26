@@ -22,7 +22,7 @@ function App() {
       <Student name="Al" age={23} isStudent={false}></Student>
       <Student name="Md" age={27} isStudent={true}></Student>
       <Student name="Guest" age={34} isStudent={true} /> */}
-      <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting>
+      <UserGreeting isLoggedIn={true} username="Atik"></UserGreeting>
     </>
   );
 }
