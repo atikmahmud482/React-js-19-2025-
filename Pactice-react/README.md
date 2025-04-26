@@ -30,7 +30,7 @@ src/ ├── components/ │ ├── Header.jsx │ ├── CardSection.js
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/cloudcore-shop.git
+   git clone [https://github.com/atikmahmud482/cloudcore-shop.git](https://github.com/atikmahmud482/React-js-19-2025-/tree/a088f3fa2542c26b25c78d7a8d972b0519cd79f5/Pactice-react)
    cd cloudcore-shop
    ```
 
