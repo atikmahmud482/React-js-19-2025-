@@ -26,21 +26,6 @@ src/ ├── components/ │ ├── Header.jsx │ ├── CardSection.js
 
 ---
 
-## 🔧 Installation & Running
-
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/your-username/cloudcore-shop.git
-   cd cloudcore-shop
-   ```
-
-## Install Dependencies
-
-npm install
-
-## Start Development Server
-
-npm run dev
 
 ## 🧑‍💻 Author
 
