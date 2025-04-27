@@ -5,6 +5,7 @@ import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
 import List from "./List";
+import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 
@@ -57,6 +58,7 @@ function App() {
         <List items={vegetables} category="vegetables" />
       )} */}
       <Buttons></Buttons>
+      <ProfilePicture />
     </>
   );
 }
