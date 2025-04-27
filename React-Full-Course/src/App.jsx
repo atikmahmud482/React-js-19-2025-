@@ -8,30 +8,30 @@ import Student from "./Student";
 import UserGreeting from "./UserGreeting";
 
 function App() {
-  const fruits = [
-    { key: 1, name: "Apple", calories: 95 },
-    { key: 2, name: "Banana", calories: 105 },
-    { key: 3, name: "Orange", calories: 62 },
-    { key: 4, name: "Mango", calories: 150 },
-    { key: 5, name: "Grapes", calories: 67 },
-    { key: 6, name: "Pineapple", calories: 82 },
-    { key: 7, name: "Strawberry", calories: 4 },
-    { key: 8, name: "Watermelon", calories: 86 },
-    { key: 9, name: "Blueberry", calories: 57 },
-    { key: 10, name: "Papaya", calories: 120 },
-  ];
-  const vegetables = [
-    { key: 11, name: "Carrot", calories: 41 },
-    { key: 12, name: "Broccoli", calories: 55 },
-    { key: 13, name: "Spinach", calories: 23 },
-    { key: 14, name: "Potato", calories: 77 },
-    { key: 15, name: "Tomato", calories: 18 },
-    { key: 16, name: "Cucumber", calories: 16 },
-    { key: 17, name: "Eggplant", calories: 25 },
-    { key: 18, name: "Cabbage", calories: 22 },
-    { key: 19, name: "Onion", calories: 40 },
-    { key: 20, name: "Peas", calories: 81 },
-  ];
+  // const fruits = [
+  //   { key: 1, name: "Apple", calories: 95 },
+  //   { key: 2, name: "Banana", calories: 105 },
+  //   { key: 3, name: "Orange", calories: 62 },
+  //   { key: 4, name: "Mango", calories: 150 },
+  //   { key: 5, name: "Grapes", calories: 67 },
+  //   { key: 6, name: "Pineapple", calories: 82 },
+  //   { key: 7, name: "Strawberry", calories: 4 },
+  //   { key: 8, name: "Watermelon", calories: 86 },
+  //   { key: 9, name: "Blueberry", calories: 57 },
+  //   { key: 10, name: "Papaya", calories: 120 },
+  // ];
+  // const vegetables = [
+  //   { key: 11, name: "Carrot", calories: 41 },
+  //   { key: 12, name: "Broccoli", calories: 55 },
+  //   { key: 13, name: "Spinach", calories: 23 },
+  //   { key: 14, name: "Potato", calories: 77 },
+  //   { key: 15, name: "Tomato", calories: 18 },
+  //   { key: 16, name: "Cucumber", calories: 16 },
+  //   { key: 17, name: "Eggplant", calories: 25 },
+  //   { key: 18, name: "Cabbage", calories: 22 },
+  //   { key: 19, name: "Onion", calories: 40 },
+  //   { key: 20, name: "Peas", calories: 81 },
+  // ];
 
   return (
     <>
@@ -51,10 +51,10 @@ function App() {
       {/* <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting> */}
       {/* <List items={fruits} category="Fruits" />
       <List items={vegetables} category="Vegetables" /> */}
-      {fruits.length > 0 && <List items={fruits} category="fruits" />}
+      {/* {fruits.length > 0 && <List items={fruits} category="fruits" />}
       {vegetables.length > 0 && (
         <List items={vegetables} category="vegetables" />
-      )}
+      )} */}
     </>
   );
 }
