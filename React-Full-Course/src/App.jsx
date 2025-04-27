@@ -49,8 +49,12 @@ function App() {
       <Student name="Md" age={27} isStudent={true}></Student>
       <Student name="Guest" age={34} isStudent={true} /> */}
       {/* <UserGreeting isLoggedIn={false} username="Atik"></UserGreeting> */}
-      <List items={fruits} category="Fruits" />
-      <List items={vegetables} category="Vegetables" />
+      {/* <List items={fruits} category="Fruits" />
+      <List items={vegetables} category="Vegetables" /> */}
+      {fruits.length > 0 ? <List items={fruits} category="fruits" /> : null}
+      {vegetables.length > 0 ? (
+        <List items={vegetables} category="vegetables" />
+      ) : null}
     </>
   );
 }
