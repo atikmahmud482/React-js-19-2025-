@@ -1,4 +1,5 @@
 import Button from "./Button/Button";
+import Buttons from "./Buttons";
 import Card from "./Card";
 import Food from "./Food";
 import Footer from "./Footer";
@@ -55,6 +56,7 @@ function App() {
       {vegetables.length > 0 && (
         <List items={vegetables} category="vegetables" />
       )} */}
+      <Buttons></Buttons>
     </>
   );
 }
