@@ -5,6 +5,7 @@ import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
 import List from "./List";
+import MyComponents from "./MyComponents";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
@@ -57,8 +58,9 @@ function App() {
       {vegetables.length > 0 && (
         <List items={vegetables} category="vegetables" />
       )} */}
-      <Buttons></Buttons>
-      <ProfilePicture />
+      {/* <Buttons></Buttons> */}
+      {/* <ProfilePicture /> */}
+      <MyComponents></MyComponents>
     </>
   );
 }
