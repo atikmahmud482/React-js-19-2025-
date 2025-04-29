@@ -88,3 +88,8 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.counter-btn:hover {
+  background-color: rgb(110, 110, 155);
+  transition: 0.5s;
+}
