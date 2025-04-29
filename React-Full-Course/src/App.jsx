@@ -6,6 +6,7 @@ import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
 import List from "./List";
+import MyComponent from "./MyComponent";
 import MyComponents from "./MyComponents";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
@@ -62,7 +63,8 @@ function App() {
       {/* <Buttons></Buttons> */}
       {/* <ProfilePicture /> */}
       {/* <MyComponents></MyComponents> */}
-      <Counter />
+      {/* <Counter /> */}
+      <MyComponent></MyComponent>
     </>
   );
 }
