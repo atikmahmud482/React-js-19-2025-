@@ -1,6 +1,7 @@
 import Button from "./Button/Button";
 import Buttons from "./Buttons";
 import Card from "./Card";
+import Counter from "./Counter";
 import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -60,7 +61,8 @@ function App() {
       )} */}
       {/* <Buttons></Buttons> */}
       {/* <ProfilePicture /> */}
-      <MyComponents></MyComponents>
+      {/* <MyComponents></MyComponents> */}
+      <Counter />
     </>
   );
 }
