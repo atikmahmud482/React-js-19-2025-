@@ -13,11 +13,17 @@ function Counter() {
     setCount(0);
   };
   return (
-    <div>
-      <h1>Counter</h1>
-      <h2>Count: {count}</h2> <button onClick={decrement}>Decrement</button>
-      <button onClick={resetCount}>Reset</button>
-      <button onClick={increment}>Increment</button>
+    <div className="counter-container">
+      <h2 className="count-display">{count}</h2>
+      <button className="counter-btn" onClick={decrement}>
+        Decrement
+      </button>
+      <button className="counter-btn" onClick={resetCount}>
+        Reset
+      </button>
+      <button className="counter-btn" onClick={increment}>
+        Increment
+      </button>
     </div>
   );
 }

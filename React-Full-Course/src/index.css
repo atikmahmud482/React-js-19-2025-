@@ -64,3 +64,17 @@
   color: hsl(0, 0%, 45%);
   cursor: pointer;
 } */
+
+.counter-container {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.count-display {
+  font-size: 2rem;
+
+  margin-bottom: 50px;
+}
+
+.counter-btn {
+}
