@@ -64,9 +64,9 @@ function App() {
       {/* <Buttons></Buttons> */}
       {/* <ProfilePicture /> */}
       {/* <MyComponents></MyComponents> */}
-      {/* <Counter /> */}
+      <Counter />
       {/* <MyComponent></MyComponent> */}
-      <ColorPicker />
+      {/* <ColorPicker /> */}
     </>
   );
 }
