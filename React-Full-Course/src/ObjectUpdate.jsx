@@ -8,19 +8,19 @@ function ObjectUpdate() {
     color: "black",
   });
   function handleBrandChange(e) {
-    setCar({ ...car, brand: e.target.value });
+    setCar((c) => ({ ...c, brand: e.target.value }));
   }
 
   function handleModelChange(e) {
-    setCar({ ...car, model: e.target.value });
+    setCar((c) => ({ ...c, model: e.target.value }));
   }
 
   function handleYearChange(e) {
-    setCar({ ...car, year: e.target.value });
+    setCar((c) => ({ ...c, year: e.target.value }));
   }
 
   function handleColorChange(e) {
-    setCar({ ...car, color: e.target.value });
+    setCar((c) => ({ ...c, color: e.target.value }));
   }
 
   return (
