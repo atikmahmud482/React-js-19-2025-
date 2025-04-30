@@ -93,3 +93,51 @@
   background-color: rgb(110, 110, 155);
   transition: 0.5s;
 }
+
+---------------------------------------------------------------- body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0, 0%, 88%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s ease;
+}
+
+.color-display p {
+  font-size: 2rem;
+  color: hsl(0, 0%, 20%);
+  font-weight: bold;
+  text-align: center;
+}
+
+label {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="color"] {
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid hsl(0, 0%, 88%);
+}
