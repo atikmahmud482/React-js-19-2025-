@@ -9,6 +9,7 @@ import Header from "./Header";
 import List from "./List";
 import MyComponent from "./MyComponent";
 import MyComponents from "./MyComponents";
+import ObjectUpdate from "./ObjectUpdate";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import UserGreeting from "./UserGreeting";
@@ -64,9 +65,10 @@ function App() {
       {/* <Buttons></Buttons> */}
       {/* <ProfilePicture /> */}
       {/* <MyComponents></MyComponents> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <MyComponent></MyComponent> */}
       {/* <ColorPicker /> */}
+      <ObjectUpdate />
     </>
   );
 }
