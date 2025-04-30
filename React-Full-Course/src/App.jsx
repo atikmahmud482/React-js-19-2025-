@@ -12,6 +12,7 @@ import MyComponents from "./MyComponents";
 import ObjectUpdate from "./ObjectUpdate";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
+import UpdateArray from "./UpdateArray";
 import UserGreeting from "./UserGreeting";
 
 function App() {
@@ -68,7 +69,8 @@ function App() {
       {/* <Counter /> */}
       {/* <MyComponent></MyComponent> */}
       {/* <ColorPicker /> */}
-      <ObjectUpdate />
+      {/* <ObjectUpdate /> */}
+      <UpdateArray />
     </>
   );
 }
