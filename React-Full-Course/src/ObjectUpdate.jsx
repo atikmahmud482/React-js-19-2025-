@@ -7,21 +7,31 @@ function ObjectUpdate() {
     year: 2020,
     color: "black",
   });
-  function handleBrandChange() {}
+  function handleBrandChange() {
+    setCar({ ...car, brand: "BM" });
+  }
 
   function handleModelChange() {}
 
-  function handleYearChange() {}
+  function handleYearChange() {
+    setCar({ ...car, year: 2021 });
+  }
 
   function handleColorChange() {}
 
   return (
     <div>
       <p className="object-update">
-        Your favorite car is: {car.brand}-{car.model}-{car.color}-{car.year}{" "}
+        Your favorite car is: {car.brand}-{car.model}-{car.year}-{car.color}{" "}
       </p>
-      <input type="number" value={car.year} /> <br />
-      <input type="text" value={car} />
+      <input type="text" value={car.brand} onChange={handleBrandChange} />{" "}
+      <br />
+      <input type="text" value={car.model} onChange={handleModelChange} />{" "}
+      <br />
+      <input type="number" value={car.year} onChange={handleYearChange} />{" "}
+      <br />
+      <input type="text" value={car.color} onChange={handleColorChange} />{" "}
+      <br />
     </div>
   );
 }
