@@ -12,6 +12,7 @@ function ObjectUpdate() {
       <p className="object-update">
         Your favorite car is: {car.brand}-{car.model}-{car.color}-{car.year}{" "}
       </p>
+      <input type="number" value={car.year} /> <br />
     </div>
   );
 }
