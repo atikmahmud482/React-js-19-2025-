@@ -1,6 +1,7 @@
 import Button from "./Button/Button";
 import Buttons from "./Buttons";
 import Card from "./Card";
+import ColorPicker from "./ColorPicker";
 import Counter from "./Counter";
 import Food from "./Food";
 import Footer from "./Footer";
@@ -64,7 +65,8 @@ function App() {
       {/* <ProfilePicture /> */}
       {/* <MyComponents></MyComponents> */}
       {/* <Counter /> */}
-      <MyComponent></MyComponent>
+      {/* <MyComponent></MyComponent> */}
+      <ColorPicker />
     </>
   );
 }
