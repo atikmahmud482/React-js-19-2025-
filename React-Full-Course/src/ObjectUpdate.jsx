@@ -7,17 +7,21 @@ function ObjectUpdate() {
     year: 2020,
     color: "black",
   });
-  function handleBrandChange() {
-    setCar({ ...car, brand: "BM" });
+  function handleBrandChange(e) {
+    setCar({ ...car, brand: e.target.value });
   }
 
-  function handleModelChange() {}
-
-  function handleYearChange() {
-    setCar({ ...car, year: 2021 });
+  function handleModelChange(e) {
+    setCar({ ...car, model: e.target.value });
   }
 
-  function handleColorChange() {}
+  function handleYearChange(e) {
+    setCar({ ...car, year: e.target.value });
+  }
+
+  function handleColorChange(e) {
+    setCar({ ...car, color: e.target.value });
+  }
 
   return (
     <div>
