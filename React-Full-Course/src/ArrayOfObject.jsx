@@ -13,9 +13,15 @@ function ArrayOfObject() {
       model: carModel,
     };
     setCars((prevCar) => [...prevCar, newCar]);
+
+    setCarYear(new Date().getFullYear());
+    setCarMake("");
+    setCarModel("");
   }
 
-  function handleRemoveCar(index) {}
+  function handleRemoveCar(index) {
+    setCars((prevCar) => prevCar.filter((_, i) => i !== index));
+  }
 
   function handleYearChange(event) {
     setCarYear(event.target.value);
@@ -34,7 +40,7 @@ function ArrayOfObject() {
       <h2>List of Car Object</h2>
       <ul>
         {cars.map((car, index) => (
-          <li key={index}>
+          <li key={index} onClick={() => handleRemoveCar(index)}>
             {car.year} {car.make} {car.model}
           </li>
         ))}
