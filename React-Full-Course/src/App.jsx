@@ -1,3 +1,4 @@
+import ArrayOfObject from "./ArrayOfObject";
 import Button from "./Button/Button";
 import Buttons from "./Buttons";
 import Card from "./Card";
@@ -70,7 +71,8 @@ function App() {
       {/* <MyComponent></MyComponent> */}
       {/* <ColorPicker /> */}
       {/* <ObjectUpdate /> */}
-      <UpdateArray />
+      {/* <UpdateArray /> */}
+      <ArrayOfObject />
     </>
   );
 }
