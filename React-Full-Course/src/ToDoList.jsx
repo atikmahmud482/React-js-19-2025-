@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { CgLayoutGrid } from "react-icons/cg";
 
 function ToDoList() {
-  const [tasks, setTask] = useState([]);
+  const [tasks, setTask] = useState([
+    "Eat Breakfast",
+    "Go to Gym",
+    "Study React",
+  ]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(e) {
@@ -31,17 +36,14 @@ function ToDoList() {
         </button>
       </div>
       <ul>
-        {tasks.map((task, index) => {
+        {tasks.map((task, index) => (
           <li key={index}>
-            <span className="text"> {task}</span>
-            <button className="delete-Button" onClick={() => deleteTask(index)}>
-              Delete Button
-            </button>
-            <button className="delete-Button" onClick={() => deleteTask(index)}>
-              Delete Button
-            </button>
-          </li>;
-        })}
+            <span>{task}</span>
+            <button onClick={() => deleteTask(index)}>Delete</button>
+            <button onClick={() => moveTaskUp(index)}>↑</button>
+            <button onClick={() => moveTaskDown(index)}>↓</button>
+          </li>
+        ))}
       </ul>
     </div>
   );
