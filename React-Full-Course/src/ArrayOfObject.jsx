@@ -6,20 +6,39 @@ function ArrayOfObject() {
   const [carMake, setCarMake] = useState("");
   const [carModel, setCarModel] = useState("");
 
-  function handleAddCar() {}
+  function handleAddCar() {
+    const newCar = {
+      year: carYear,
+      make: carMake,
+      model: carModel,
+    };
+    setCars((prevCar) => [...prevCar, newCar]);
+  }
 
   function handleRemoveCar(index) {}
 
-  function handleYearChange(event) {}
+  function handleYearChange(event) {
+    setCarYear(event.target.value);
+  }
 
-  function handleMakeChange(event) {}
+  function handleMakeChange(event) {
+    setCarMake(event.target.value);
+  }
 
-  function handleModelChange(event) {}
+  function handleModelChange(event) {
+    setCarModel(event.target.value);
+  }
 
   return (
     <div>
       <h2>List of Car Object</h2>
-      <ul></ul>
+      <ul>
+        {cars.map((car, index) => (
+          <li key={index}>
+            {car.year} {car.make} {car.model}
+          </li>
+        ))}
+      </ul>
       <input type="number" value={carYear} onChange={handleYearChange} /> <br />
       <input
         type="text"
@@ -31,7 +50,7 @@ function ArrayOfObject() {
       <input
         type="text"
         placeholder="Add car Model"
-        value={carMake}
+        value={carModel}
         onChange={handleModelChange}
       />{" "}
       <br />
