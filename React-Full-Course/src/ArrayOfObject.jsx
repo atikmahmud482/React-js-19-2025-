@@ -16,7 +16,28 @@ function ArrayOfObject() {
 
   function handleModelChange(event) {}
 
-  return <div>ArrayOfObject</div>;
+  return (
+    <div>
+      <h2>List of Car Object</h2>
+      <ul></ul>
+      <input type="number" value={carYear} onChange={handleYearChange} /> <br />
+      <input
+        type="text"
+        placeholder="Add car Make"
+        value={carMake}
+        onChange={handleMakeChange}
+      />{" "}
+      <br />
+      <input
+        type="text"
+        placeholder="Add car Model"
+        value={carMake}
+        onChange={handleModelChange}
+      />{" "}
+      <br />
+      <button onClick={handleAddCar}>Add Car</button>
+    </div>
+  );
 }
 
 export default ArrayOfObject;
