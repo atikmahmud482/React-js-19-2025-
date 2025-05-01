@@ -13,6 +13,7 @@ import MyComponents from "./MyComponents";
 import ObjectUpdate from "./ObjectUpdate";
 import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
+import ToDoList from "./ToDoList";
 import UpdateArray from "./UpdateArray";
 import UserGreeting from "./UserGreeting";
 
@@ -72,7 +73,8 @@ function App() {
       {/* <ColorPicker /> */}
       {/* <ObjectUpdate /> */}
       {/* <UpdateArray /> */}
-      <ArrayOfObject />
+      {/* <ArrayOfObject /> */}
+      <ToDoList />
     </>
   );
 }
