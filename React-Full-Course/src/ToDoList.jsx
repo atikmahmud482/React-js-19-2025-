@@ -1,12 +1,7 @@
 import React, { useState } from "react";
-import { CgLayoutGrid } from "react-icons/cg";
 
 function ToDoList() {
-  const [tasks, setTask] = useState([
-    "Eat Breakfast",
-    "Go to Gym",
-    "Study React",
-  ]);
+  const [tasks, setTask] = useState([]);
   const [newTask, setNewTask] = useState("");
 
   function handleInputChange(e) {
@@ -23,9 +18,28 @@ function ToDoList() {
     setTask((t) => t.filter((_, i) => i !== index));
   }
 
-  function moveTaskUp(index) {}
+  function moveTaskUp(index) {
+    if (index > 0) {
+      const updatedTasks = [...tasks];
+      [updatedTasks[index - 1], updatedTasks[index]] = [
+        updatedTasks[index],
+        updatedTasks[index - 1],
+      ];
+      setTask(updatedTasks);
+    }
+  }
 
-  function moveTaskDown(index) {}
+  function moveTaskDown(index) {
+    if (index < tasks.length - 1) {
+      const updatedTasks = [...tasks];
+      [updatedTasks[index + 1], updatedTasks[index]] = [
+        updatedTasks[index],
+        updatedTasks[index + 1],
+      ];
+      setTask(updatedTasks);
+    }
+  }
+
   return (
     <div className="to-do-list">
       <h2>To-Do-List</h2>
