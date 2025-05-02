@@ -15,6 +15,7 @@ import ProfilePicture from "./ProfilePicture";
 import Student from "./Student";
 import ToDoList from "./ToDoList";
 import UpdateArray from "./UpdateArray";
+import UseEffect from "./UseEffect";
 import UserGreeting from "./UserGreeting";
 
 function App() {
@@ -74,7 +75,8 @@ function App() {
       {/* <ObjectUpdate /> */}
       {/* <UpdateArray /> */}
       {/* <ArrayOfObject /> */}
-      <ToDoList />
+      {/* <ToDoList /> */}
+      <UseEffect />
     </>
   );
 }
