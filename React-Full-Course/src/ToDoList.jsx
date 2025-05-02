@@ -13,7 +13,11 @@ function ToDoList() {
     setNewTask(e.target.value);
   }
 
-  function addTask() {}
+  function addTask() {
+    if (newTask.trim() === "") return;
+    setTask((t) => [...t, newTask]);
+    setNewTask("");
+  }
 
   function deleteTask(index) {}
 
@@ -24,7 +28,7 @@ function ToDoList() {
     <div className="to-do-list">
       <h2>To-Do-List</h2>
 
-      <div>
+      <div className="input-container">
         <input
           type="text"
           placeholder="Enter a task..."
