@@ -3,6 +3,7 @@ import Button from "./Button/Button";
 import Buttons from "./Buttons";
 import Card from "./Card";
 import ColorPicker from "./ColorPicker";
+import ComponentsA from "./components/ComponentsA";
 import Counter from "./Counter";
 import DigitalClock from "./DigitalClock";
 import Food from "./Food";
@@ -78,7 +79,8 @@ function App() {
       {/* <ArrayOfObject /> */}
       {/* <ToDoList /> */}
       {/* <UseEffect /> */}
-      <DigitalClock></DigitalClock>
+      {/* <DigitalClock></DigitalClock> */}
+      <ComponentsA />
     </>
   );
 }
