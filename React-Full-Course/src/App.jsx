@@ -18,6 +18,7 @@ import Student from "./Student";
 import ToDoList from "./ToDoList";
 import UpdateArray from "./UpdateArray";
 import UseEffect from "./UseEffect";
+import UseRef from "./UseRef";
 import UserGreeting from "./UserGreeting";
 
 function App() {
@@ -80,7 +81,8 @@ function App() {
       {/* <ToDoList /> */}
       {/* <UseEffect /> */}
       {/* <DigitalClock></DigitalClock> */}
-      <ComponentsA />
+      {/* <ComponentsA /> */}
+      <UseRef></UseRef>
     </>
   );
 }
