@@ -45,6 +45,10 @@ function UseEffect() {
     };
   }, []);
 
+  useEffect(() => {
+    document.title = `width: ${width} height: ${height}`;
+  }, [width, height]);
+
   function handleResize() {
     setWidth(window.innerWidth);
     setHeight(window.innerHeight);
