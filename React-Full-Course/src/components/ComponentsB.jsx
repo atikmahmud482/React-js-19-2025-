@@ -1,11 +1,11 @@
 import React from "react";
 import ComponentsC from "./ComponentsC";
 
-function ComponentsB() {
+function ComponentsB(props) {
   return (
     <div className="box">
       <h1>ComponentsB</h1>
-      <ComponentsC />
+      <ComponentsC user={props.user} />
     </div>
   );
 }
