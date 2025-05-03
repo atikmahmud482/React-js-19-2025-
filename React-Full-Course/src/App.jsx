@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Card from "./Card";
 import ColorPicker from "./ColorPicker";
 import Counter from "./Counter";
+import DigitalClock from "./DigitalClock";
 import Food from "./Food";
 import Footer from "./Footer";
 import Header from "./Header";
@@ -76,7 +77,8 @@ function App() {
       {/* <UpdateArray /> */}
       {/* <ArrayOfObject /> */}
       {/* <ToDoList /> */}
-      <UseEffect />
+      {/* <UseEffect /> */}
+      <DigitalClock></DigitalClock>
     </>
   );
 }
