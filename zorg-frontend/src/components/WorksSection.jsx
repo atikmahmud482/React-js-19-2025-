@@ -11,19 +11,19 @@ const WorksSection = () => {
         <img
           src={work1}
           alt="Work 1"
-          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] border-white"
+          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] "
         />
         {/* Work 2 */}
         <img
           src={work2}
           alt="Work 2"
-          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] border-white"
+          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] "
         />
         {/* Work 3 */}
         <img
           src={work3}
           alt="Work 3"
-          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] border-white"
+          className="w-full md:w-[30%] h-auto object-cover rounded-[24px] border-[5px] "
         />
       </div>
     </section>
