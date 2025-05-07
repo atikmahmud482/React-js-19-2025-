@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkSection = () => {
   return (
-    <section className="w-full flex flex-col items-center py-16 bg-black">
+    <section className="w-full flex flex-col items-center py-16 bg-black overflow-x-hidden">
       {/* Title and Description */}
       <div
         className="flex flex-col items-center text-center"
@@ -18,14 +18,11 @@ const WorkSection = () => {
         </p>
       </div>
 
-      {/* Container Area: 1440x1126 */}
+      {/* Outer Container: 1440 x 1126 */}
       <div
-        className="relative  flex flex-col items-center"
-        style={{
-          width: "1440px",
-          height: "1126px",
-        }}>
-        {/* Inner Box: 1140x970 */}
+        className="relative flex flex-col items-center w-full overflow-x-auto mt-[85px]"
+        style={{ minWidth: "1440px", height: "1126px" }}>
+        {/* Inner Box: 1140 x 970 */}
         <div
           className="flex flex-col gap-[32px]"
           style={{
@@ -35,11 +32,12 @@ const WorkSection = () => {
             marginLeft: "149.96px",
           }}>
           {/* Top Row - 2 Cards */}
-          <div className="flex gap-[32px]">
+          <div className="flex gap-[8px]">
             {[1, 2].map((_, index) => (
               <div
                 key={index}
-                className="w-[554px] h-[566px] bg-gray-800 rounded-xl p-[24px] flex flex-col">
+                className="bg-gray-800 rounded-xl p-[24px] flex flex-col"
+                style={{ width: "554px", height: "566px" }}>
                 <img
                   src="path-to-your-image.jpg"
                   alt={`Work ${index + 1}`}
@@ -48,7 +46,16 @@ const WorkSection = () => {
                 <p className="text-white text-left text-[16px] mb-4">
                   Project {index + 1} description goes here. Clear and concise.
                 </p>
-                <button className="bg-blue-500 text-white px-6 py-2 rounded-md self-start">
+                <button
+                  className="text-white border border-white rounded-full"
+                  style={{
+                    width: "151px",
+                    height: "56px",
+                    padding: "12px 24px",
+                    borderRadius: "56px",
+                    borderWidth: "1px",
+                    alignSelf: "flex-end",
+                  }}>
                   View Details
                 </button>
               </div>
@@ -56,11 +63,12 @@ const WorkSection = () => {
           </div>
 
           {/* Bottom Row - 3 Cards */}
-          <div className="flex gap-[24px]">
+          <div className="flex gap-[8px]">
             {[3, 4, 5].map((_, index) => (
               <div
                 key={index}
-                className="w-[364px] h-[372px] bg-gray-800 rounded-xl p-[16px] flex flex-col">
+                className="bg-gray-800 rounded-xl p-[16px] flex flex-col"
+                style={{ width: "364px", height: "372px" }}>
                 <img
                   src="path-to-your-image.jpg"
                   alt={`Work ${index + 3}`}
@@ -69,7 +77,16 @@ const WorkSection = () => {
                 <p className="text-white text-left text-[14px] mb-3">
                   Project {index + 3} details presented here briefly.
                 </p>
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-md self-start">
+                <button
+                  className="text-white border border-white rounded-full"
+                  style={{
+                    width: "151px",
+                    height: "56px",
+                    padding: "12px 24px",
+                    borderRadius: "56px",
+                    borderWidth: "1px",
+                    alignSelf: "flex-end",
+                  }}>
                   View Details
                 </button>
               </div>
