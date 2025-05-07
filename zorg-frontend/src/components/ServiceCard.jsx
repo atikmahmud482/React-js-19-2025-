@@ -29,8 +29,8 @@ const ServiceCard = ({
           right: 0,
           bottom: 0,
           borderRadius: "5px",
-          filter: "blur(5px)",
-          zIndex: 1,
+          filter: "blur(2px)",
+          zIndex: -6,
         }}></div>
 
       {/* Icon */}
