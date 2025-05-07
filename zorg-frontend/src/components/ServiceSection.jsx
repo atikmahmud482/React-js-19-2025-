@@ -1,7 +1,12 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import exampleIcon from "../assets/frame.png";
-import textureImage from "../assets/back-cover.png"; // Replace with your texture image path
+import textureImage from "../assets/back-cover.png";
+
+// Import your 4 icons
+import icon1 from "../assets/frame/Frame1.png";
+import icon2 from "../assets/frame/Frame2.png";
+import icon3 from "../assets/frame/Frame3.png";
+import icon4 from "../assets/frame/Frame4.png";
 
 const ServiceSection = () => {
   return (
@@ -21,35 +26,41 @@ const ServiceSection = () => {
       </div>
 
       {/* Cards */}
-      <div className="w-[1140px] h-[427px] rounded-xl mt-8 flex justify-center items-center gap-2">
+      <div className="w-[1140px] h-[427px] rounded-xl flex justify-center items-center gap-2">
         <ServiceCard
-          icon={exampleIcon}
+          icon={icon1}
           title="All-In-One (AIO) Service"
           description="Our AIO solution tailors to your unique vision, crafting a website that truly reflects..."
-          backgroundColor="#E879F926"
-          textureImage={textureImage}
-        />
-        <ServiceCard
-          icon={exampleIcon}
-          title="Project-Based Development"
-          description="Ideal for agencies with ready designs, our service focuses on bringing..."
-          backgroundColor="#00C2FF26"
-          textureImage={textureImage}
-        />
-        <ServiceCard
-          icon={exampleIcon}
-          title="Scalable Dev Partnership"
-          description="Our partnership is designed for businesses needing consistent development support..."
           backgroundColor="#00FFB226"
           textureImage={textureImage}
         />
-        <ServiceCard
-          icon={exampleIcon}
-          title="End-to-End Consulting"
-          description="Our partnership is designed for businesses needing consistent development support..."
-          backgroundColor="#FFA50026"
-          textureImage={textureImage}
-        />
+        <div className="relative mt-20">
+          <ServiceCard
+            icon={icon2}
+            title="Project-Based Development"
+            description="Ideal for agencies with ready designs, our service focuses on bringing..."
+            backgroundColor="#00C2FF26"
+            textureImage={textureImage}
+          />
+        </div>
+        <div className="relative mt-5">
+          <ServiceCard
+            icon={icon3}
+            title="Scalable Dev Partnership"
+            description="Our partnership is designed for businesses needing consistent development support..."
+            backgroundColor="#E879F926"
+            textureImage={textureImage}
+          />
+        </div>
+        <div className="relative -mt-10">
+          <ServiceCard
+            icon={icon4}
+            title="End-to-End Consulting"
+            description="Our partnership is designed for businesses needing consistent development support..."
+            backgroundColor="#FFA50026"
+            textureImage={textureImage}
+          />
+        </div>
       </div>
     </section>
   );

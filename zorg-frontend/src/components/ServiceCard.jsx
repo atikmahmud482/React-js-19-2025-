@@ -1,6 +1,6 @@
 import React from "react";
-import arrowIcon from "../assets/Arrow Right Up.png"; // Replace with your arrow icon
-import exampleIcon from "../assets/frame.png"; // Replace with your icon
+import arrowIcon from "../assets/Arrow Right Up.png";
+import exampleIcon from "../assets/frame/Frame4.png";
 
 const ServiceCard = ({
   icon,
@@ -15,7 +15,7 @@ const ServiceCard = ({
       style={{
         backgroundColor: backgroundColor || "#E879F926",
         borderWidth: "1.4px",
-        position: "relative", // Added to allow absolute positioning of the overlay
+        position: "relative",
       }}>
       {/* Background Texture (Blurred) */}
       <div
@@ -23,14 +23,14 @@ const ServiceCard = ({
           backgroundImage: `url(${textureImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          position: "absolute", // Position the texture image behind the card content
+          position: "absolute",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          borderRadius: "5px", // Keep rounded corners for texture image
-          filter: "blur(5px)", // Apply blur effect
-          zIndex: 1, // Ensure the texture is behind other elements
+          borderRadius: "5px",
+          filter: "blur(5px)",
+          zIndex: 1,
         }}></div>
 
       {/* Icon */}
@@ -38,10 +38,13 @@ const ServiceCard = ({
         src={icon || exampleIcon}
         alt="Service Icon"
         className="w-[56px] h-[56px]"
+        style={{ zIndex: 2 }}
       />
 
       {/* Title + Arrow */}
-      <div className="flex justify-between items-center w-[238px]">
+      <div
+        className="flex justify-between items-center w-[238px]"
+        style={{ zIndex: 2 }}>
         <h3 className="text-white font-semibold text-[20px]">{title}</h3>
         <img src={arrowIcon} alt="Arrow Icon" className="w-[40px] h-[40px]" />
       </div>
@@ -49,7 +52,7 @@ const ServiceCard = ({
       {/* Description */}
       <p
         className="text-white text-left text-[16px] leading-[24px]"
-        style={{ width: "238px", height: "58px" }}>
+        style={{ width: "238px", height: "58px", zIndex: 2 }}>
         {description}
       </p>
     </div>
