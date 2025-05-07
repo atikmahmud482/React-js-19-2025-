@@ -24,29 +24,29 @@ const ServiceSection = () => {
       <div className="w-[1140px] h-[427px] rounded-xl mt-8 flex justify-center items-center gap-2">
         <ServiceCard
           icon={exampleIcon}
-          title="Web Design"
-          description="Crafting visually stunning websites."
+          title="All-In-One (AIO) Service"
+          description="Our AIO solution tailors to your unique vision, crafting a website that truly reflects..."
           backgroundColor="#E879F926"
           textureImage={textureImage}
         />
         <ServiceCard
           icon={exampleIcon}
-          title="UI/UX Design"
-          description="Designing seamless user experiences."
+          title="Project-Based Development"
+          description="Ideal for agencies with ready designs, our service focuses on bringing..."
           backgroundColor="#00C2FF26"
           textureImage={textureImage}
         />
         <ServiceCard
           icon={exampleIcon}
-          title="Web Development"
-          description="Building scalable, high-performance websites."
+          title="Scalable Dev Partnership"
+          description="Our partnership is designed for businesses needing consistent development support..."
           backgroundColor="#00FFB226"
           textureImage={textureImage}
         />
         <ServiceCard
           icon={exampleIcon}
-          title="App Development"
-          description="Creating modern mobile applications."
+          title="End-to-End Consulting"
+          description="Our partnership is designed for businesses needing consistent development support..."
           backgroundColor="#FFA50026"
           textureImage={textureImage}
         />

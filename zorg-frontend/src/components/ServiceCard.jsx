@@ -11,7 +11,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div
-      className="w-[286px] h-[314px] rounded-[26px] border p-6 flex flex-col gap-10"
+      className="w-[286px] h-[314px] rounded-[15px] border p-6 flex flex-col gap-10"
       style={{
         backgroundColor: backgroundColor || "#E879F926",
         borderWidth: "1.4px",
