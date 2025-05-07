@@ -1,3 +1,4 @@
+import FooterSection from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import InsightsSection from "./components/InsigntsSection";
@@ -14,6 +15,7 @@ function App() {
       <ServiceSection />
       <WorkSection />
       <InsightsSection />
+      <FooterSection />
     </div>
   );
 }
