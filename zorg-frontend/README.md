@@ -1,12 +1,52 @@
-# React + Vite
+🚀 Zorg IT Frontend Assignment
+A pixel-perfect frontend implementation based on a Figma design as part of the Web Developer Intern application at Zorg IT Group LLC.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 Live Demo
+🔗 View Live on Netlify
+https://zorgitgroup.netlify.app/
 
-Currently, two official plugins are available:
+📁 GitHub Repository
+📂 View on GitHub
+https://github.com/atikmahmud482/React-js-19-2025-/tree/main/zorg-frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🛠️ Tech Stack
+React.js – Frontend framework
 
-## Expanding the ESLint configuration
+Vite – Development server and bundler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tailwind CSS – Utility-first CSS for styling
+
+Figma – Used for design reference
+
+Netlify – Deployment platform 
+
+📂 Folder Structure
+
+src/
+├── assets/             # All immage, icon, etc.
+│   └── social/
+├── components/         # Reusable React components (All component here)
+│   ├── Header.jsx
+│   ├── FooterSection.jsx
+│   └── ...other sections
+├── App.jsx             # Root component
+├── main.jsx            # Entry point
+├── index.css           # Tailwind and global styles
+public/
+├── favicon.ico         # Optional
+
+📌 Decisions & Assumptions
+Responsive behavior is implemented using Tailwind's responsive classes. (All Device)
+
+The navigation bar uses a scroll detection mechanism to hide/show on scroll.
+
+Mobile navigation is activated via a hamburger menu.
+
+Assumes all assets are static and located under src/assets/.
+
+### 🙋‍♂️ About Me
+
+**Name:** Atik Al Mahmud  
+**Role:** Frontend Developer (Intern Applicant)  
+**Email:** atikmahmud482@gmail.com  
+**LinkedIn:** https://www.linkedin.com/in/atik-al-mahmud-8b6628340/  
