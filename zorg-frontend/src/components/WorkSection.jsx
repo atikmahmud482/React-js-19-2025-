@@ -102,6 +102,18 @@ const WorkSection = () => {
             </div>
           ))}
         </div>
+        <div className="flex justify-center mt-8">
+          <button
+            className="bg-[#73BFF9] text-white font-bold text-base rounded-[48px] w-[201px] h-[72px] flex items-center justify-center"
+            style={{
+              paddingTop: "20px",
+              paddingRight: "32px",
+              paddingBottom: "20px",
+              paddingLeft: "32px",
+            }}>
+            See More
+          </button>
+        </div>
       </div>
     </section>
   );

@@ -1,7 +1,7 @@
 import React from "react";
-import arrowUp from "../assets/work/Arro up.png"; // Import the up arrow PNG image
+import arrowUp from "../assets/project-file/Arrow Right Up.png"; // Import the up arrow PNG image
 
-const InsightsSection = () => {
+const InsightSection = () => {
   return (
     <section className="w-full flex justify-center py-16 bg-black px-4">
       <div
@@ -19,7 +19,7 @@ const InsightsSection = () => {
         </div>
 
         {/* Content Cards */}
-        <div className="flex flex-col gap-[6px]">
+        <div className="flex flex-col gap-[12px]">
           {/* Insight Card 1 */}
           <div
             className="w-full h-[88px] rounded-[8px] p-[24px] flex justify-between items-center text-white"
@@ -171,7 +171,7 @@ const InsightsSection = () => {
               paddingBottom: "20px",
               paddingLeft: "32px",
             }}>
-            View More
+            See More
           </button>
         </div>
       </div>
@@ -179,4 +179,4 @@ const InsightsSection = () => {
   );
 };
 
-export default InsightsSection;
+export default InsightSection;

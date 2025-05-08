@@ -75,6 +75,11 @@ const FooterSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Copyright */}
+      <div className="mt-2 text-center text-sm text-white/60">
+        &copy; {new Date().getFullYear()} Atik-Al-Mahmud. All rights reserved.
+      </div>
     </footer>
   );
 };

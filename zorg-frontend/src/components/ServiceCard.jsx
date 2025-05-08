@@ -1,5 +1,5 @@
 import React from "react";
-import arrowIcon from "../assets/Arrow Right Up.png";
+import arrowIcon from "../assets/project-file/Arrow Right Up.png";
 import exampleIcon from "../assets/frame/Frame4.png";
 
 const ServiceCard = ({

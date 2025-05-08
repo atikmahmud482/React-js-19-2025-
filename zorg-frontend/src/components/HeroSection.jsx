@@ -1,9 +1,9 @@
 import React from "react";
-import logo1 from "../assets/logo1.png";
-import logo2 from "../assets/logo2.png";
-import logo3 from "../assets/logo3.png";
-import logo4 from "../assets/logo4.png";
-import logo5 from "../assets/logo5.png";
+import logo1 from "../assets/project-file/logo1.png";
+import logo2 from "../assets/project-file/logo2.png";
+import logo3 from "../assets/project-file/logo3.png";
+import logo4 from "../assets/project-file/logo4.png";
+import logo5 from "../assets/project-file/logo5.png";
 import bannerImage from "../assets/frame/banner.jpg";
 
 const HeroSection = () => {
@@ -24,7 +24,7 @@ const HeroSection = () => {
             className="w-[231px] h-[64px] px-[32px] py-[20px] gap-2 rounded-[48px] 
             text-white font-semibold 
             bg-gradient-to-r from-[#73BFFA] to-[#3C97F5]">
-            Get Started
+            Book a call with us
           </button>
         </div>
       </div>

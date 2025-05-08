@@ -1,7 +1,7 @@
 import React from "react";
-import work1 from "../assets/image1.png";
-import work2 from "../assets/image3.png";
-import work3 from "../assets/image2.png";
+import work1 from "../assets/first-work/image1.png";
+import work2 from "../assets/first-work/image3.png";
+import work3 from "../assets/first-work/image2.png";
 
 const WorksSection = () => {
   return (
