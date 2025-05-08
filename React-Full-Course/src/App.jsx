@@ -14,6 +14,7 @@ import MyComponent from "./MyComponent";
 import MyComponents from "./MyComponents";
 import ObjectUpdate from "./ObjectUpdate";
 import ProfilePicture from "./ProfilePicture";
+import Stopwatch from "./Stopwatch";
 import Student from "./Student";
 import ToDoList from "./ToDoList";
 import UpdateArray from "./UpdateArray";
@@ -82,7 +83,8 @@ function App() {
       {/* <UseEffect /> */}
       {/* <DigitalClock></DigitalClock> */}
       {/* <ComponentsA /> */}
-      <UseRef></UseRef>
+      {/* <UseRef></UseRef> */}
+      <Stopwatch />
     </>
   );
 }
