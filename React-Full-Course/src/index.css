@@ -271,3 +271,19 @@ li {
   color: white;
   transition: background-color 0.5s ease;
 }
+
+.start-button {
+  background-color: hsl(116, 100%, 40%);
+}
+
+.start-button:hover {
+  background-color: hsl(116, 100%, 30%);
+}
+
+.stop-button {
+  background-color: hsl(0, 100%, 40%);
+}
+
+.stop-button:hover {
+  background-color: hsl(0, 100%, 30%);
+}
