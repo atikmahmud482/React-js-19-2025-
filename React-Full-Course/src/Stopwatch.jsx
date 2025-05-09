@@ -29,6 +29,9 @@ function Stopwatch() {
     setIsRunning(false);
   }
   function formatTime() {
+    let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+    let minuits = Math.floor(elapsedTime / (1000 * 60) / 60);
+    let seconds = Math.floor((elapsedTime / 1000) % 60);
     return `00:00:00`;
   }
   return (
