@@ -12,8 +12,13 @@ function Stopwatch() {
     setIsRunning(true);
     startTimeRef.current = Date.now() - elapsedTime;
   }
-  function stop() {}
-  function reset() {}
+  function stop() {
+    setIsRunning(false);
+  }
+  function reset() {
+    setElapsedTime(0);
+    setIsRunning(false);
+  }
   function formatTime() {
     return `00:00:00`;
   }
