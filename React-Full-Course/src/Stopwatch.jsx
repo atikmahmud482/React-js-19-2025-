@@ -9,7 +9,8 @@ function Stopwatch() {
   useEffect(() => {}, [isRunning]);
 
   function start() {
-    return "dsfljksd";
+    setIsRunning(true);
+    startTimeRef.current = Date.now() - elapsedTime;
   }
   function stop() {}
   function reset() {}
