@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/nav/navbar.png"; // adjust the path as needed
+import logo from "../assets/nav/navbar.png";
 
 const NavBar = () => {
   const [prevScrollY, setPrevScrollY] = useState(0);

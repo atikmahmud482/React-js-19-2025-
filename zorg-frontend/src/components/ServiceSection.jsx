@@ -2,7 +2,6 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 import textureImage from "../assets/back-cover.png";
 
-// Import your 4 icons
 import icon1 from "../assets/frame/Frame1.png";
 import icon2 from "../assets/frame/Frame2.png";
 import icon3 from "../assets/frame/Frame3.png";

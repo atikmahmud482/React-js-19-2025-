@@ -13,6 +13,7 @@ import List from "./List";
 import MyComponent from "./MyComponent";
 import MyComponents from "./MyComponents";
 import ObjectUpdate from "./ObjectUpdate";
+import Practice from "./Practice";
 import ProfilePicture from "./ProfilePicture";
 import Stopwatch from "./Stopwatch";
 import Student from "./Student";
@@ -84,7 +85,8 @@ function App() {
       {/* <DigitalClock></DigitalClock> */}
       {/* <ComponentsA /> */}
       {/* <UseRef></UseRef> */}
-      <Stopwatch />
+      {/* <Stopwatch /> */}
+      <Practice />
     </>
   );
 }

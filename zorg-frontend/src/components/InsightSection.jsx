@@ -1,5 +1,5 @@
 import React from "react";
-import arrowUp from "../assets/project-file/Arrow Right Up.png"; // Import the up arrow PNG image
+import arrowUp from "../assets/project-file/Arrow Right Up.png";
 
 const InsightSection = () => {
   return (
