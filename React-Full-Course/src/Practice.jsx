@@ -19,10 +19,18 @@
 
 // export default Practice;
 
-import React from "react";
+// import React from "react";
 
-function Practice(props) {
-  return <div>{props.title}</div>;
-}
+// function Practice(props) {
+//   return <div>{props.title}</div>;
+// }
 
-export default Practice;
+// export default Practice;
+
+// import React from "react";
+
+// function Practice() {
+//   return <div>Practice</div>;
+// }
+
+// export default Practice;
