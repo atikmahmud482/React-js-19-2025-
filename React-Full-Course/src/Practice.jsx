@@ -34,3 +34,17 @@
 // }
 
 // export default Practice;
+
+import React, { useState } from "react";
+
+function Practice() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <button></button>
+    </>
+  );
+}
+
+export default Practice;
