@@ -86,7 +86,7 @@ function App() {
       {/* <ComponentsA /> */}
       {/* <UseRef></UseRef> */}
       {/* <Stopwatch /> */}
-      <Practice />
+      <Practice title="React" />
     </>
   );
 }
