@@ -42,7 +42,10 @@ function Practice() {
 
   return (
     <>
-      <button></button>
+      <button className="btn" onClick={() => setCount(count + 1)}>
+        Button
+      </button>
+      Count: {count}
     </>
   );
 }
