@@ -35,19 +35,28 @@
 
 // export default Practice;
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
+
+// function Practice() {
+//   const [count, setCount] = useState(0);
+
+//   return (
+//     <>
+//       <button className="btn" onClick={() => setCount(count + 1)}>
+//         Button
+//       </button>
+//       Count: {count}
+//     </>
+//   );
+// }
+
+// export default Practice;
+
+import React from "react";
 
 function Practice() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <button className="btn" onClick={() => setCount(count + 1)}>
-        Button
-      </button>
-      Count: {count}
-    </>
-  );
+  const handleClick = () => alert("Clicked!");
+  return <button onClick={handleClick}>Click</button>;
 }
 
 export default Practice;
