@@ -52,11 +52,24 @@
 
 // export default Practice;
 
-import React from "react";
+// import React from "react";
+
+// function Practice() {
+//   const handleClick = () => alert("Clicked!");
+//   return <button onClick={handleClick}>Click</button>;
+// }
+
+// export default Practice;
+
+import React, { useEffect } from "react";
 
 function Practice() {
-  const handleClick = () => alert("Clicked!");
-  return <button onClick={handleClick}>Click</button>;
+  useEffect(() => {
+    console.log("Component mounted");
+    return () => console.log("Cleanup");
+  }, []);
+
+  return <div>Practice Component</div>;
 }
 
 export default Practice;
