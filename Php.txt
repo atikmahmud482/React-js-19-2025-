@@ -42,3 +42,22 @@ echo "My name is $name and I am $age years old.";
 PHP Data Types:
 
 string, int, float, bool, array, object, null
+
+✅ Level 3: Conditions & Loops
+
+<?php
+$score = 85;
+
+if ($score >= 90) {
+  echo "A+";
+} elseif ($score >= 80) {
+  echo "A";
+} else {
+  echo "Below A";
+}
+
+// Loop
+for ($i = 1; $i <= 5; $i++) {
+  echo "Number: $i <br>";
+}
+?>
