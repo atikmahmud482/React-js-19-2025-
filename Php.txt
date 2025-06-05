@@ -1,0 +1,15 @@
+🚀 PHP Roadmap: Zero to Hero
+
+✅ Level 0: Setup & Basics
+
+1. Install XAMPP or Local Server
+
+Download XAMPP and install it.
+
+Open XAMPP Control Panel and start Apache and MySQL.
+
+Save your PHP files in:
+C:\xampp\htdocs\your-folder\file.php
+
+Access in browser via:
+http://localhost/your-folder/file.php
