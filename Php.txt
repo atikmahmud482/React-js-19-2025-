@@ -13,3 +13,18 @@ C:\xampp\htdocs\your-folder\file.php
 
 Access in browser via:
 http://localhost/your-folder/file.php
+
+✅ Level 1: Basic PHP Syntax
+
+<?php
+echo "Hello, World!";
+?>
+
+✅ Try this:
+
+Create a file index.php
+
+Paste the above code
+
+Run it on http://localhost/your-folder/index.php
+
