@@ -61,3 +61,26 @@ for ($i = 1; $i <= 5; $i++) {
   echo "Number: $i <br>";
 }
 ?>
+✅ Level 4: Functions
+
+<?php
+function greet($name) {
+  return "Hello, $name!";
+}
+
+echo greet("Atik");
+?>
+
+
+---
+
+✅ Level 5: Arrays
+
+<?php
+$fruits = ["Apple", "Banana", "Mango"];
+echo $fruits[1]; // Banana
+
+foreach ($fruits as $fruit) {
+  echo "$fruit <br>";
+}
+?>
