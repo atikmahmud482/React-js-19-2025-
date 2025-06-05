@@ -28,3 +28,17 @@ Paste the above code
 
 Run it on http://localhost/your-folder/index.php
 
+✅ Level 2: Variables & Data Types
+
+<?php
+$name = "Atik";
+$age = 22;
+$height = 5.9;
+$is_coder = true;
+
+echo "My name is $name and I am $age years old.";
+?>
+
+PHP Data Types:
+
+string, int, float, bool, array, object, null
