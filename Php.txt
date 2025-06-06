@@ -219,3 +219,13 @@ $is_student = true;
 
 echo "My name is $name and I am $age years old.";
 ?>
+🧪 PHP Data Types:
+
+Type	Example	Description
+
+string	"Atik"	Text values
+int	22	Whole numbers
+float	5.8	Decimal numbers
+bool	true, false	Yes/No values
+array	["apple", "banana"]	List of items
+null	null	Empty or no value
