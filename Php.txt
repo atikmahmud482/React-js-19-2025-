@@ -124,3 +124,31 @@ Learn WordPress file structure
 Create custom themes
 
 Build basic plugins using hooks & filters
+
+✅ Lesson 1: Setup & "Hello, World!" in PHP
+
+🖥️ Step 1: Install XAMPP (if not already done)
+
+1. Go to: https://www.apachefriends.org/index.html
+
+
+2. Download XAMPP for Windows/Linux/Mac
+
+
+3. Install it on your computer.
+
+
+
+
+---
+
+🔧 Step 2: Start the Server
+
+1. Open XAMPP Control Panel
+
+
+2. Click Start on both:
+
+Apache (for running PHP)
+
+MySQL (for database, later)
