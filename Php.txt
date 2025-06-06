@@ -178,3 +178,27 @@ Open index.php in any code editor (VS Code, Notepad++), and paste this:
 
 <?php
 echo "👋 Hello, World! I'm learning PHP!";
+🌐 Step 5: Run It in Your Browser
+
+1. Open your browser
+
+
+2. Visit:
+http://localhost/php-lessons/index.php
+
+
+
+You should see:
+
+👋 Hello, World! I'm learning PHP!
+
+
+---
+
+✅ What You Learned:
+
+How to install and run PHP locally
+
+What a PHP file looks like
+
+How to output text using echo
