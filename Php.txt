@@ -202,3 +202,20 @@ How to install and run PHP locally
 What a PHP file looks like
 
 How to output text using echo
+
+✅ Lesson 2: PHP Variables & Data Types
+
+📦 What is a Variable?
+
+A variable is used to store data (like a name, number, etc.) so you can use it later.
+
+In PHP, you define a variable with a $ sign:
+
+<?php
+$name = "Atik";
+$age = 22;
+$height = 5.8;
+$is_student = true;
+
+echo "My name is $name and I am $age years old.";
+?>
