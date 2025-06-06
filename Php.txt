@@ -152,3 +152,29 @@ Build basic plugins using hooks & filters
 Apache (for running PHP)
 
 MySQL (for database, later)
+
+📁 Step 3: Create Your First PHP File
+
+1. Go to:
+C:\xampp\htdocs\ (Windows)
+or
+/Applications/XAMPP/htdocs/ (Mac)
+
+
+2. Create a new folder, e.g., php-lessons
+
+
+3. Inside that folder, create a file named:
+index.php
+
+
+
+
+---
+
+✍️ Step 4: Write Your First PHP Code
+
+Open index.php in any code editor (VS Code, Notepad++), and paste this:
+
+<?php
+echo "👋 Hello, World! I'm learning PHP!";
