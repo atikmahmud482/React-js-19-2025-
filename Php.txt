@@ -229,3 +229,22 @@ float	5.8	Decimal numbers
 bool	true, false	Yes/No values
 array	["apple", "banana"]	List of items
 null	null	Empty or no value
+✅ Example: Display All Types
+
+<?php
+$name = "Atik";         // string
+$age = 22;              // int
+$height = 5.8;          // float
+$is_coder = true;       // bool
+$skills = ["HTML", "CSS", "PHP"]; // array
+$job = null;            // null
+
+echo "Name: $name <br>";
+echo "Age: $age <br>";
+echo "Height: $height <br>";
+echo "Is a coder? " . ($is_coder ? "Yes" : "No") . "<br>";
+echo "First skill: " . $skills[0] . "<br>";
+echo "Job: " . $job . "<br>";
+?>
+
+> 🔍 ($is_coder ? "Yes" : "No") is a ternary operator, used to write simple if-else conditions in one line.
