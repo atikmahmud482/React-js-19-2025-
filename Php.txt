@@ -248,3 +248,30 @@ echo "Job: " . $job . "<br>";
 ?>
 
 > 🔍 ($is_coder ? "Yes" : "No") is a ternary operator, used to write simple if-else conditions in one line.
+
+
+✅ Lesson 3: Conditions & Loops in PHP
+
+🔹 1. Conditional Statements (if, else, elseif)
+
+➤ Example 1: Grading System
+
+<?php
+$score = 87;
+
+if ($score >= 90) {
+    echo "Grade: A+";
+} elseif ($score >= 80) {
+    echo "Grade: A";
+} elseif ($score >= 70) {
+    echo "Grade: B";
+} else {
+    echo "Grade: Fail";
+}
+?>
+
+🧠 Explanation:
+
+PHP checks conditions top to bottom.
+
+As soon as one is true, it runs that block and skips the rest.
