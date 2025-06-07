@@ -275,3 +275,13 @@ if ($score >= 90) {
 PHP checks conditions top to bottom.
 
 As soon as one is true, it runs that block and skips the rest.
+🔹 2. Comparison Operators
+
+Operator	Meaning	Example ($a = 5, $b = 3)
+
+==	Equal to	$a == $b → false
+!=	Not equal	$a != $b → true
+>	Greater than	$a > $b → true
+<	Less than	$a < $b → false
+>=	Greater or equal	$a >= 5 → true
+<=	Less or equal	$a <= 3 → false
