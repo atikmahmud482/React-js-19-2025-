@@ -314,3 +314,21 @@ foreach ($fruits as $fruit) {
     echo "Fruit: $fruit <br>";
 }
 ?>
+✅ Lesson 4: Functions in PHP
+
+🔹 What is a Function?
+
+A function is a reusable block of code that performs a specific task.
+
+
+---
+
+✍️ How to Write a Function in PHP
+
+<?php
+function greet() {
+  echo "Hello from a function!";
+}
+
+greet(); // Call the function
+?>
