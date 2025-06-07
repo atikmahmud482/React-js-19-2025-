@@ -332,3 +332,19 @@ function greet() {
 
 greet(); // Call the function
 ?>
+🔹 Function with Parameters
+
+<?php
+function greetUser($name) {
+  echo "Hello, $name!";
+}
+
+greetUser("Atik"); // Output: Hello, Atik!
+?>
+
+You can pass multiple parameters:
+
+<?php
+function add($a, $b) {
+  echo $a + $b;
+}
