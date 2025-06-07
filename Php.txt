@@ -348,3 +348,27 @@ You can pass multiple parameters:
 function add($a, $b) {
   echo $a + $b;
 }
+🔹 Function with Return Value
+
+<?php
+function multiply($x, $y) {
+  return $x * $y;
+}
+
+$result = multiply(4, 6);
+echo "Result: $result"; // Output: Result: 24
+?>
+
+
+---
+
+🔹 Default Parameters
+
+<?php
+function welcome($name = "Guest") {
+  echo "Welcome, $name!";
+}
+
+welcome();         // Output: Welcome, Guest!
+welcome("Atik");   // Output: Welcome, Atik!
+?>
