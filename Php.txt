@@ -285,3 +285,32 @@ Operator	Meaning	Example ($a = 5, $b = 3)
 <	Less than	$a < $b → false
 >=	Greater or equal	$a >= 5 → true
 <=	Less or equal	$a <= 3 → false
+🔄 3. Loops (for, while, foreach)
+
+➤ Example 2: for Loop (Print 1 to 5)
+
+<?php
+for ($i = 1; $i <= 5; $i++) {
+    echo "Number: $i <br>";
+}
+?>
+
+➤ Example 3: while Loop
+
+<?php
+$x = 1;
+while ($x <= 3) {
+    echo "x = $x <br>";
+    $x++;
+}
+?>
+
+➤ Example 4: foreach Loop (Array)
+
+<?php
+$fruits = ["Apple", "Banana", "Mango"];
+
+foreach ($fruits as $fruit) {
+    echo "Fruit: $fruit <br>";
+}
+?>
