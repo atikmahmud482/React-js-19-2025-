@@ -472,3 +472,25 @@ $name = $_POST["username"];  // Gets the input from form
 
 echo "Welcome, $name!";
 ?>
+🟡 $_GET vs $_POST
+
+Type	When to Use	Example
+
+GET	When sending visible data	form-handler.php?name=Atik
+POST	When sending hidden/secure data	Used in login forms, user input
+
+
+
+---
+
+🔹 Example: GET Form
+
+<form action="form-handler.php" method="GET">
+  <input type="text" name="city" />
+  <input type="submit" value="Submit" />
+</form>
+
+<?php
+$city = $_GET["city"];
+echo "You live in $city";
+?>
