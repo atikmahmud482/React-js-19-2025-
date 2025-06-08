@@ -391,3 +391,20 @@ foreach ($colors as $color) {
     echo "$color <br>";
 }
 ?>
+🔹 2. Associative Arrays (like a dictionary)
+
+These use named keys.
+
+<?php
+$person = [
+    "name" => "Atik",
+    "age" => 22,
+    "country" => "Bangladesh"
+];
+
+echo $person["name"]; // Atik
+
+foreach ($person as $key => $value) {
+    echo "$key: $value <br>";
+}
+?
