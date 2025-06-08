@@ -443,3 +443,23 @@ if (in_array("PHP", $skills)) {
     echo "You know PHP!";
 }
 ?>
+✅ Lesson 6: Forms, GET & POST in PHP
+
+Forms allow users to submit data to your PHP script. You can collect this data using $_GET or $_POST.
+
+
+---
+
+🔹 Step 1: Create an HTML Form
+
+Save this as form.html inside your XAMPP htdocs folder:
+
+<form action="form-handler.php" method="POST">
+  <label>Your Name:</label>
+  <input type="text" name="username" />
+  <input type="submit" value="Submit" />
+</form>
+
+action="form-handler.php" → this is where the form data goes
+
+method="POST" → use POST to send form data securely
