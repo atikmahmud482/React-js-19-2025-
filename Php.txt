@@ -372,3 +372,22 @@ function welcome($name = "Guest") {
 welcome();         // Output: Welcome, Guest!
 welcome("Atik");   // Output: Welcome, Atik!
 ?>
+
+✅ Lesson 5: Arrays in PHP
+
+Arrays let you store multiple values in a single variable.
+
+
+---
+
+🔹 1. Indexed Arrays (like a list)
+
+<?php
+$colors = ["Red", "Green", "Blue"];
+
+echo $colors[0]; // Red
+
+foreach ($colors as $color) {
+    echo "$color <br>";
+}
+?>
