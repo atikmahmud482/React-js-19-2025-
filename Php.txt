@@ -463,3 +463,12 @@ Save this as form.html inside your XAMPP htdocs folder:
 action="form-handler.php" → this is where the form data goes
 
 method="POST" → use POST to send form data securely
+🔹 Step 2: Handle the Form with PHP
+
+Create a file named form-handler.php in the same folder:
+
+<?php
+$name = $_POST["username"];  // Gets the input from form
+
+echo "Welcome, $name!";
+?>
