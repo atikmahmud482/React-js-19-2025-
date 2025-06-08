@@ -408,3 +408,38 @@ foreach ($person as $key => $value) {
     echo "$key: $value <br>";
 }
 ?
+🔹 3. Multidimensional Arrays
+
+Arrays inside arrays.
+
+<?php
+$users = [
+    ["name" => "Atik", "age" => 22],
+    ["name" => "Sara", "age" => 25]
+];
+
+echo $users[1]["name"]; // Sara
+
+foreach ($users as $user) {
+    echo "Name: " . $user["name"] . ", Age: " . $user["age"] . "<br>";
+}
+?>
+🔧 Common Array Functions
+
+Function	Use
+
+count($arr)	Count items in array
+array_push()	Add item to end
+array_pop()	Remove last item
+in_array()	Check if value exists
+array_keys()	Get all keys in assoc array
+
+
+<?php
+$skills = ["HTML", "CSS", "PHP"];
+array_push($skills, "JavaScript");
+
+if (in_array("PHP", $skills)) {
+    echo "You know PHP!";
+}
+?>
