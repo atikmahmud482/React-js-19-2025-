@@ -562,3 +562,14 @@ if ($conn->query($sql) === TRUE) {
 
 ✅ You should see "User added successfully!" in your browser
 🔍 Check your users table in phpMyAdmin to confirm the data is saved.
+🔹 Step 5: Display Data from Database
+
+<?php
+include "connect.php";
+
+$result = $conn->query("SELECT * FROM users");
+
+while ($row = $result->fetch_assoc()) {
+    echo "Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
+}
+?>
