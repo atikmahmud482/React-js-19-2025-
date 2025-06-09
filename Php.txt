@@ -543,3 +543,22 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 ?>
+🔹 Step 4: Insert Data into Database
+
+<?php
+include "connect.php";
+
+$name = "Atik";
+$email = "atik@example.com";
+
+$sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+
+if ($conn->query($sql) === TRUE) {
+    echo "User added successfully!";
+} else {
+    echo "Error: " . $conn->error;
+}
+?>
+
+✅ You should see "User added successfully!" in your browser
+🔍 Check your users table in phpMyAdmin to confirm the data is saved.
