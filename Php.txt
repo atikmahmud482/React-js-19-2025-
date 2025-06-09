@@ -527,3 +527,19 @@ id – INT, Auto Increment, Primary Key
 name – VARCHAR(100)
 
 email – VARCHAR(100)
+🔹 Step 3: Connect PHP to MySQL
+
+Create a file connect.php:
+
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "php_tutorial";
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
