@@ -573,3 +573,38 @@ while ($row = $result->fetch_assoc()) {
     echo "Name: " . $row["name"] . " - Email: " . $row["email"] . "<br>";
 }
 ?>
+✅ Lesson 8: WordPress Theme & Plugin Basics with PHP
+
+Since your goal is to become a WordPress developer, you’ll now learn how PHP powers themes and plugins inside WordPress.
+
+
+---
+
+🧱 What is WordPress Built On?
+
+Core language: PHP
+
+Database: MySQL
+
+Frontend: HTML, CSS, JS
+
+Structure: Uses themes, plugins, and the WordPress core
+
+
+
+---
+
+🔸 A. WordPress Theme Basics
+
+🗂️ Theme Folder Structure:
+
+Example structure inside /wp-content/themes/your-theme-name/:
+
+your-theme/
+├── style.css         ← required
+├── index.php         ← required
+├── header.php
+├── footer.php
+├── functions.php
+├── page.php
+├── single.php
