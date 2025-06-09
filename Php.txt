@@ -494,3 +494,22 @@ POST	When sending hidden/secure data	Used in login forms, user input
 $city = $_GET["city"];
 echo "You live in $city";
 ?>
+✅ Lesson 7: PHP + MySQL (Database Integration)
+
+This is where PHP becomes truly powerful—you'll learn how to connect your PHP code to a database, insert data, and retrieve it.
+
+
+---
+
+🔹 Step 1: Create a Database using phpMyAdmin
+
+1. Go to: http://localhost/phpmyadmin
+
+
+2. Click “New” in the sidebar
+
+
+3. Name your database: php_tutorial
+
+
+4. Click “Create”
