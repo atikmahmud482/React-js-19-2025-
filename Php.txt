@@ -513,3 +513,17 @@ This is where PHP becomes truly powerful—you'll learn how to connect your PHP 
 
 
 4. Click “Create”
+🔹 Step 2: Create a Table
+
+Inside the php_tutorial database:
+
+1. Create a table named users
+
+
+2. Add these columns:
+
+id – INT, Auto Increment, Primary Key
+
+name – VARCHAR(100)
+
+email – VARCHAR(100)
