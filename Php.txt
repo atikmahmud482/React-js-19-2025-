@@ -639,3 +639,11 @@ Zip your theme folder
 Upload it via Appearance > Themes > Add New > Upload
 
 Or place it inside /wp-content/themes/ manually and activate it
+🔸 B. WordPress Plugin Basics
+
+📂 Plugin Folder Structure
+
+Inside /wp-content/plugins/atik-plugin/, create:
+
+atik-plugin/
+└── atik-plugin.php
