@@ -616,3 +616,10 @@ Author: Atik Al Mahmud
 Description: A custom theme built from scratch.
 Version: 1.0
 */
+🧠 2. index.php (Main template)
+
+<?php get_header(); ?>
+
+<h1>Welcome to my custom theme</h1>
+
+<?php get_footer(); ?>
