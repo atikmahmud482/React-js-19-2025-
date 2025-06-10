@@ -623,3 +623,12 @@ Version: 1.0
 <h1>Welcome to my custom theme</h1>
 
 <?php get_footer(); ?>
+🔧 3. functions.php (Register features)
+
+<?php
+function atik_theme_setup() {
+    add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
+}
+add_action('after_setup_theme', 'atik_theme_setup');
+?>
