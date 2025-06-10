@@ -632,3 +632,10 @@ function atik_theme_setup() {
 }
 add_action('after_setup_theme', 'atik_theme_setup');
 ?>
+✅ Activate the Theme:
+
+Zip your theme folder
+
+Upload it via Appearance > Themes > Add New > Upload
+
+Or place it inside /wp-content/themes/ manually and activate it
