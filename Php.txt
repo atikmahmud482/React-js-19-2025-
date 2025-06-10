@@ -608,3 +608,11 @@ your-theme/
 ├── functions.php
 ├── page.php
 ├── single.php
+📝 1. style.css (Theme Declaration)
+
+/*
+Theme Name: Atik's First Theme
+Author: Atik Al Mahmud
+Description: A custom theme built from scratch.
+Version: 1.0
+*/
