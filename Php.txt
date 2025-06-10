@@ -647,3 +647,23 @@ Inside /wp-content/plugins/atik-plugin/, create:
 
 atik-plugin/
 └── atik-plugin.php
+📝 1. atik-plugin.php (Plugin declaration)
+
+<?php
+/**
+ * Plugin Name: Atik's First Plugin
+ * Description: A simple plugin that adds a greeting.
+ * Version: 1.0
+ * Author: Atik Al Mahmud
+ */
+
+function atik_greeting() {
+    return "<p>Hello from Atik's Plugin!</p>";
+}
+add_shortcode('atik_hello', 'atik_greeting');
+
+✅ Usage: In a WordPress post or page, add:
+
+[atik_hello]
+
+And it will show your custom greeting.
