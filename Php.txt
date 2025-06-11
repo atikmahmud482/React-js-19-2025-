@@ -697,3 +697,11 @@ mysite/
 ├── header.php
 ├── footer.php
 ├── functions.php
+🔹 Step 2: style.css (theme info)
+
+/*
+Theme Name: MySite
+Author: Atik Al Mahmud
+Version: 1.0
+Description: A simple custom theme for learning.
+*/
