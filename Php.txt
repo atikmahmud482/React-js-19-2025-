@@ -723,3 +723,17 @@ endif;
 ?>
 
 <?php get_footer(); ?>
+🔹 Step 4: header.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><?php bloginfo('name'); ?></title>
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+</head>
+<body>
+    <header>
+        <h1><?php bloginfo('name'); ?></h1>
+        <p><?php bloginfo('description'); ?></p>
+    </header>
