@@ -667,3 +667,33 @@ add_shortcode('atik_hello', 'atik_greeting');
 [atik_hello]
 
 And it will show your custom greeting.
+✅ Project: Build Your First Custom WordPress Theme (Step-by-Step)
+
+We’ll build a simple theme called “MySite” that includes:
+
+A dynamic header and footer
+
+A home page showing latest posts
+
+A styled blog layout
+
+Use of PHP functions like the_title(), the_content(), get_header() etc.
+
+
+
+---
+
+🔹 Step 1: Create Your Theme Folder
+
+Go to wp-content/themes/ in your local WordPress install and create a folder called:
+
+mysite
+
+Inside that folder, create these files:
+
+mysite/
+├── style.css
+├── index.php
+├── header.php
+├── footer.php
+├── functions.php
