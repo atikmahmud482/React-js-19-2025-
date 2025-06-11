@@ -756,3 +756,37 @@ function mysite_setup() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'mysite_setup');
+🔹 Step 7: Activate Your Theme
+
+1. Go to Appearance → Themes
+
+
+2. Find “MySite” and click Activate
+
+
+3. Visit the home page – your custom theme is working 🎉
+
+
+
+
+---
+
+✅ Bonus: Create a Plugin That Shows Current Time
+
+Inside wp-content/plugins/atik-time-plugin/ create:
+
+📄 atik-time-plugin.php
+
+<?php
+/*
+Plugin Name: Atik Time Plugin
+Description: Shows current time using shortcode.
+Version: 1.0
+*/
+
+function atik_show_time() {
+    return "<p>Current Time: " . date("h:i:s A") . "</p>";
+}
+add_shortcode('show_time', 'atik_show_time');
+
+Then use [show_time] in any post/page to show the time.
