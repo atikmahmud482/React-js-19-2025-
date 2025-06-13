@@ -790,3 +790,14 @@ function atik_show_time() {
 add_shortcode('show_time', 'atik_show_time');
 
 Then use [show_time] in any post/page to show the time.
+
+
+Your 6 files for the WordPress Theme + Plugin project
+1. style.css (Theme declaration)
+
+/*
+Theme Name: MySite
+Author: Atik Al Mahmud
+Version: 1.0
+Description: A simple custom theme for learning.
+*/
