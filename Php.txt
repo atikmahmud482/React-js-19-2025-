@@ -831,3 +831,10 @@ endif;
         <h1><?php bloginfo('name'); ?></h1>
         <p><?php bloginfo('description'); ?></p>
     </header>
+4. footer.php (Theme footer)
+
+<footer>
+        <p>&copy; <?php echo date("Y"); ?> - All rights reserved.</p>
+    </footer>
+</body>
+</html>
