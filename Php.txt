@@ -846,3 +846,19 @@ function mysite_setup() {
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'mysite_setup');
+6. atik-time-plugin.php (Plugin file)
+
+Place this inside a folder /wp-content/plugins/atik-time-plugin/
+
+<?php
+/*
+Plugin Name: Atik Time Plugin
+Description: Shows current time using shortcode.
+Version: 1.0
+Author: Atik Al Mahmud
+*/
+
+function atik_show_time() {
+    return "<p>Current Time: " . date("h:i:s A") . "</p>";
+}
+add_shortcode('show_time', 'atik_show_time');
